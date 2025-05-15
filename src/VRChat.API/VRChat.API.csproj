@@ -20,6 +20,7 @@
     <PackageReleaseNotes>Automated deployment</PackageReleaseNotes>
     <PackageTags>vrchat</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <DebugType>None</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
