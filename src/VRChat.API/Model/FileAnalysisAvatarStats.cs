@@ -91,7 +91,7 @@ namespace VRChat.API.Model
             // to ensure "bounds" is required (not null)
             if (bounds == null)
             {
-                throw new ArgumentNullException("bounds is a required property for FileAnalysisAvatarStats and cannot be null");
+                //throw new ArgumentNullException("bounds is a required property for FileAnalysisAvatarStats and cannot be null");
             }
             this.Bounds = bounds;
             this.ClothCount = clothCount;
@@ -137,31 +137,31 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets AnimatorCount
         /// </summary>
-        [DataMember(Name = "animatorCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "animatorCount", IsRequired = false, EmitDefaultValue = true)]
         public int AnimatorCount { get; set; }
 
         /// <summary>
         /// Gets or Sets AudioSourceCount
         /// </summary>
-        [DataMember(Name = "audioSourceCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "audioSourceCount", IsRequired = false, EmitDefaultValue = true)]
         public int AudioSourceCount { get; set; }
 
         /// <summary>
         /// Gets or Sets BlendShapeCount
         /// </summary>
-        [DataMember(Name = "blendShapeCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "blendShapeCount", IsRequired = false, EmitDefaultValue = true)]
         public int BlendShapeCount { get; set; }
 
         /// <summary>
         /// Gets or Sets BoneCount
         /// </summary>
-        [DataMember(Name = "boneCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "boneCount", IsRequired = false, EmitDefaultValue = true)]
         public int BoneCount { get; set; }
 
         /// <summary>
         /// Gets or Sets Bounds
         /// </summary>
-        [DataMember(Name = "bounds", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "bounds", IsRequired = false, EmitDefaultValue = true)]
         public List<decimal> Bounds { get; set; }
 
         /// <summary>
@@ -173,223 +173,223 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ClothCount
         /// </summary>
-        [DataMember(Name = "clothCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "clothCount", IsRequired = false, EmitDefaultValue = true)]
         public int ClothCount { get; set; }
 
         /// <summary>
         /// Gets or Sets ConstraintCount
         /// </summary>
-        [DataMember(Name = "constraintCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "constraintCount", IsRequired = false, EmitDefaultValue = true)]
         public int ConstraintCount { get; set; }
 
         /// <summary>
         /// Gets or Sets ContactCount
         /// </summary>
-        [DataMember(Name = "contactCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "contactCount", IsRequired = false, EmitDefaultValue = true)]
         public int ContactCount { get; set; }
 
         /// <summary>
         /// Gets or Sets CustomExpressions
         /// </summary>
-        [DataMember(Name = "customExpressions", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "customExpressions", IsRequired = false, EmitDefaultValue = true)]
         public bool CustomExpressions { get; set; }
 
         /// <summary>
         /// Gets or Sets CustomizeAnimationLayers
         /// </summary>
-        [DataMember(Name = "customizeAnimationLayers", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "customizeAnimationLayers", IsRequired = false, EmitDefaultValue = true)]
         public bool CustomizeAnimationLayers { get; set; }
 
         /// <summary>
         /// Gets or Sets EnableEyeLook
         /// </summary>
-        [DataMember(Name = "enableEyeLook", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "enableEyeLook", IsRequired = false, EmitDefaultValue = true)]
         public bool EnableEyeLook { get; set; }
 
         /// <summary>
         /// Gets or Sets LightCount
         /// </summary>
-        [DataMember(Name = "lightCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "lightCount", IsRequired = false, EmitDefaultValue = true)]
         public int LightCount { get; set; }
 
         /// <summary>
         /// Gets or Sets LineRendererCount
         /// </summary>
-        [DataMember(Name = "lineRendererCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "lineRendererCount", IsRequired = false, EmitDefaultValue = true)]
         public int LineRendererCount { get; set; }
 
         /// <summary>
         /// Gets or Sets LipSync
         /// </summary>
-        [DataMember(Name = "lipSync", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "lipSync", IsRequired = false, EmitDefaultValue = true)]
         public int LipSync { get; set; }
 
         /// <summary>
         /// Gets or Sets MaterialCount
         /// </summary>
-        [DataMember(Name = "materialCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "materialCount", IsRequired = false, EmitDefaultValue = true)]
         public int MaterialCount { get; set; }
 
         /// <summary>
         /// Gets or Sets MaterialSlotsUsed
         /// </summary>
-        [DataMember(Name = "materialSlotsUsed", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "materialSlotsUsed", IsRequired = false, EmitDefaultValue = true)]
         public int MaterialSlotsUsed { get; set; }
 
         /// <summary>
         /// Gets or Sets MeshCount
         /// </summary>
-        [DataMember(Name = "meshCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "meshCount", IsRequired = false, EmitDefaultValue = true)]
         public int MeshCount { get; set; }
 
         /// <summary>
         /// Gets or Sets MeshIndices
         /// </summary>
-        [DataMember(Name = "meshIndices", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "meshIndices", IsRequired = false, EmitDefaultValue = true)]
         public int MeshIndices { get; set; }
 
         /// <summary>
         /// Gets or Sets MeshParticleMaxPolygons
         /// </summary>
-        [DataMember(Name = "meshParticleMaxPolygons", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "meshParticleMaxPolygons", IsRequired = false, EmitDefaultValue = true)]
         public int MeshParticleMaxPolygons { get; set; }
 
         /// <summary>
         /// Gets or Sets MeshPolygons
         /// </summary>
-        [DataMember(Name = "meshPolygons", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "meshPolygons", IsRequired = false, EmitDefaultValue = true)]
         public int MeshPolygons { get; set; }
 
         /// <summary>
         /// Gets or Sets MeshVertices
         /// </summary>
-        [DataMember(Name = "meshVertices", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "meshVertices", IsRequired = false, EmitDefaultValue = true)]
         public int MeshVertices { get; set; }
 
         /// <summary>
         /// Gets or Sets ParticleCollisionEnabled
         /// </summary>
-        [DataMember(Name = "particleCollisionEnabled", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "particleCollisionEnabled", IsRequired = false, EmitDefaultValue = true)]
         public bool ParticleCollisionEnabled { get; set; }
 
         /// <summary>
         /// Gets or Sets ParticleSystemCount
         /// </summary>
-        [DataMember(Name = "particleSystemCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "particleSystemCount", IsRequired = false, EmitDefaultValue = true)]
         public int ParticleSystemCount { get; set; }
 
         /// <summary>
         /// Gets or Sets ParticleTrailsEnabled
         /// </summary>
-        [DataMember(Name = "particleTrailsEnabled", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "particleTrailsEnabled", IsRequired = false, EmitDefaultValue = true)]
         public bool ParticleTrailsEnabled { get; set; }
 
         /// <summary>
         /// Gets or Sets PhysBoneColliderCount
         /// </summary>
-        [DataMember(Name = "physBoneColliderCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "physBoneColliderCount", IsRequired = false, EmitDefaultValue = true)]
         public int PhysBoneColliderCount { get; set; }
 
         /// <summary>
         /// Gets or Sets PhysBoneCollisionCheckCount
         /// </summary>
-        [DataMember(Name = "physBoneCollisionCheckCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "physBoneCollisionCheckCount", IsRequired = false, EmitDefaultValue = true)]
         public int PhysBoneCollisionCheckCount { get; set; }
 
         /// <summary>
         /// Gets or Sets PhysBoneComponentCount
         /// </summary>
-        [DataMember(Name = "physBoneComponentCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "physBoneComponentCount", IsRequired = false, EmitDefaultValue = true)]
         public int PhysBoneComponentCount { get; set; }
 
         /// <summary>
         /// Gets or Sets PhysBoneTransformCount
         /// </summary>
-        [DataMember(Name = "physBoneTransformCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "physBoneTransformCount", IsRequired = false, EmitDefaultValue = true)]
         public int PhysBoneTransformCount { get; set; }
 
         /// <summary>
         /// Gets or Sets PhysicsColliders
         /// </summary>
-        [DataMember(Name = "physicsColliders", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "physicsColliders", IsRequired = false, EmitDefaultValue = true)]
         public int PhysicsColliders { get; set; }
 
         /// <summary>
         /// Gets or Sets PhysicsRigidbodies
         /// </summary>
-        [DataMember(Name = "physicsRigidbodies", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "physicsRigidbodies", IsRequired = false, EmitDefaultValue = true)]
         public int PhysicsRigidbodies { get; set; }
 
         /// <summary>
         /// Gets or Sets SkinnedMeshCount
         /// </summary>
-        [DataMember(Name = "skinnedMeshCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "skinnedMeshCount", IsRequired = false, EmitDefaultValue = true)]
         public int SkinnedMeshCount { get; set; }
 
         /// <summary>
         /// Gets or Sets SkinnedMeshIndices
         /// </summary>
-        [DataMember(Name = "skinnedMeshIndices", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "skinnedMeshIndices", IsRequired = false, EmitDefaultValue = true)]
         public int SkinnedMeshIndices { get; set; }
 
         /// <summary>
         /// Gets or Sets SkinnedMeshPolygons
         /// </summary>
-        [DataMember(Name = "skinnedMeshPolygons", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "skinnedMeshPolygons", IsRequired = false, EmitDefaultValue = true)]
         public int SkinnedMeshPolygons { get; set; }
 
         /// <summary>
         /// Gets or Sets SkinnedMeshVertices
         /// </summary>
-        [DataMember(Name = "skinnedMeshVertices", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "skinnedMeshVertices", IsRequired = false, EmitDefaultValue = true)]
         public int SkinnedMeshVertices { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalClothVertices
         /// </summary>
-        [DataMember(Name = "totalClothVertices", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "totalClothVertices", IsRequired = false, EmitDefaultValue = true)]
         public int TotalClothVertices { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalIndices
         /// </summary>
-        [DataMember(Name = "totalIndices", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "totalIndices", IsRequired = false, EmitDefaultValue = true)]
         public int TotalIndices { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalMaxParticles
         /// </summary>
-        [DataMember(Name = "totalMaxParticles", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "totalMaxParticles", IsRequired = false, EmitDefaultValue = true)]
         public int TotalMaxParticles { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalPolygons
         /// </summary>
-        [DataMember(Name = "totalPolygons", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "totalPolygons", IsRequired = false, EmitDefaultValue = true)]
         public int TotalPolygons { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalTextureUsage
         /// </summary>
-        [DataMember(Name = "totalTextureUsage", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "totalTextureUsage", IsRequired = false, EmitDefaultValue = true)]
         public int TotalTextureUsage { get; set; }
 
         /// <summary>
         /// Gets or Sets TotalVertices
         /// </summary>
-        [DataMember(Name = "totalVertices", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "totalVertices", IsRequired = false, EmitDefaultValue = true)]
         public int TotalVertices { get; set; }
 
         /// <summary>
         /// Gets or Sets TrailRendererCount
         /// </summary>
-        [DataMember(Name = "trailRendererCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "trailRendererCount", IsRequired = false, EmitDefaultValue = true)]
         public int TrailRendererCount { get; set; }
 
         /// <summary>
         /// Gets or Sets WriteDefaultsUsed
         /// </summary>
-        [DataMember(Name = "writeDefaultsUsed", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "writeDefaultsUsed", IsRequired = false, EmitDefaultValue = true)]
         public bool WriteDefaultsUsed { get; set; }
 
         /// <summary>

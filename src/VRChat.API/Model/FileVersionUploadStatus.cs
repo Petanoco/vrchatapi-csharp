@@ -50,13 +50,13 @@ namespace VRChat.API.Model
             // to ensure "uploadId" is required (not null)
             if (uploadId == null)
             {
-                throw new ArgumentNullException("uploadId is a required property for FileVersionUploadStatus and cannot be null");
+                //throw new ArgumentNullException("uploadId is a required property for FileVersionUploadStatus and cannot be null");
             }
             this.UploadId = uploadId;
             // to ensure "fileName" is required (not null)
             if (fileName == null)
             {
-                throw new ArgumentNullException("fileName is a required property for FileVersionUploadStatus and cannot be null");
+                //throw new ArgumentNullException("fileName is a required property for FileVersionUploadStatus and cannot be null");
             }
             this.FileName = fileName;
             this.NextPartNumber = nextPartNumber;
@@ -64,13 +64,13 @@ namespace VRChat.API.Model
             // to ensure "parts" is required (not null)
             if (parts == null)
             {
-                throw new ArgumentNullException("parts is a required property for FileVersionUploadStatus and cannot be null");
+                //throw new ArgumentNullException("parts is a required property for FileVersionUploadStatus and cannot be null");
             }
             this.Parts = parts;
             // to ensure "etags" is required (not null)
             if (etags == null)
             {
-                throw new ArgumentNullException("etags is a required property for FileVersionUploadStatus and cannot be null");
+                //throw new ArgumentNullException("etags is a required property for FileVersionUploadStatus and cannot be null");
             }
             this.Etags = etags;
         }
@@ -78,38 +78,38 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets UploadId
         /// </summary>
-        [DataMember(Name = "uploadId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "uploadId", IsRequired = false, EmitDefaultValue = true)]
         public string UploadId { get; set; }
 
         /// <summary>
         /// Gets or Sets FileName
         /// </summary>
-        [DataMember(Name = "fileName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "fileName", IsRequired = false, EmitDefaultValue = true)]
         public string FileName { get; set; }
 
         /// <summary>
         /// Gets or Sets NextPartNumber
         /// </summary>
-        [DataMember(Name = "nextPartNumber", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "nextPartNumber", IsRequired = false, EmitDefaultValue = true)]
         public int NextPartNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets MaxParts
         /// </summary>
-        [DataMember(Name = "maxParts", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "maxParts", IsRequired = false, EmitDefaultValue = true)]
         public int MaxParts { get; set; }
 
         /// <summary>
         /// Gets or Sets Parts
         /// </summary>
-        [DataMember(Name = "parts", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "parts", IsRequired = false, EmitDefaultValue = true)]
         public List<Object> Parts { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "etags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "etags", IsRequired = false, EmitDefaultValue = true)]
         public List<Object> Etags { get; set; }
 
         /// <summary>

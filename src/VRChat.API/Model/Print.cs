@@ -54,45 +54,45 @@ namespace VRChat.API.Model
             // to ensure "authorId" is required (not null)
             if (authorId == null)
             {
-                throw new ArgumentNullException("authorId is a required property for Print and cannot be null");
+                //throw new ArgumentNullException("authorId is a required property for Print and cannot be null");
             }
             this.AuthorId = authorId;
             // to ensure "authorName" is required (not null)
             if (authorName == null)
             {
-                throw new ArgumentNullException("authorName is a required property for Print and cannot be null");
+                //throw new ArgumentNullException("authorName is a required property for Print and cannot be null");
             }
             this.AuthorName = authorName;
             this.CreatedAt = createdAt;
             // to ensure "files" is required (not null)
             if (files == null)
             {
-                throw new ArgumentNullException("files is a required property for Print and cannot be null");
+                //throw new ArgumentNullException("files is a required property for Print and cannot be null");
             }
             this.Files = files;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Print and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Print and cannot be null");
             }
             this.Id = id;
             // to ensure "note" is required (not null)
             if (note == null)
             {
-                throw new ArgumentNullException("note is a required property for Print and cannot be null");
+                //throw new ArgumentNullException("note is a required property for Print and cannot be null");
             }
             this.Note = note;
             this.Timestamp = timestamp;
             // to ensure "worldId" is required (not null)
             if (worldId == null)
             {
-                throw new ArgumentNullException("worldId is a required property for Print and cannot be null");
+                //throw new ArgumentNullException("worldId is a required property for Print and cannot be null");
             }
             this.WorldId = worldId;
             // to ensure "worldName" is required (not null)
             if (worldName == null)
             {
-                throw new ArgumentNullException("worldName is a required property for Print and cannot be null");
+                //throw new ArgumentNullException("worldName is a required property for Print and cannot be null");
             }
             this.WorldName = worldName;
             this.OwnerId = ownerId;
@@ -102,37 +102,37 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "authorId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "authorId", IsRequired = false, EmitDefaultValue = true)]
         public string AuthorId { get; set; }
 
         /// <summary>
         /// Gets or Sets AuthorName
         /// </summary>
-        [DataMember(Name = "authorName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "authorName", IsRequired = false, EmitDefaultValue = true)]
         public string AuthorName { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "createdAt", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "createdAt", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets Files
         /// </summary>
-        [DataMember(Name = "files", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "files", IsRequired = false, EmitDefaultValue = true)]
         public PrintFiles Files { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Note
         /// </summary>
-        [DataMember(Name = "note", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "note", IsRequired = false, EmitDefaultValue = true)]
         public string Note { get; set; }
 
         /// <summary>
@@ -145,20 +145,20 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Timestamp
         /// </summary>
-        [DataMember(Name = "timestamp", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "timestamp", IsRequired = false, EmitDefaultValue = true)]
         public DateTime Timestamp { get; set; }
 
         /// <summary>
         /// WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.
         /// </summary>
         /// <value>WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.</value>
-        [DataMember(Name = "worldId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldId", IsRequired = false, EmitDefaultValue = true)]
         public string WorldId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorldName
         /// </summary>
-        [DataMember(Name = "worldName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldName", IsRequired = false, EmitDefaultValue = true)]
         public string WorldName { get; set; }
 
         /// <summary>

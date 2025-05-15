@@ -51,7 +51,7 @@ namespace VRChat.API.Model
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for CreateGroupGalleryRequest and cannot be null");
+                //throw new ArgumentNullException("name is a required property for CreateGroupGalleryRequest and cannot be null");
             }
             this.Name = name;
             this.Description = description;
@@ -66,7 +66,7 @@ namespace VRChat.API.Model
         /// Name of the gallery.
         /// </summary>
         /// <value>Name of the gallery.</value>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>

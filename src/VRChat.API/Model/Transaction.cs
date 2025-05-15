@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Status
         /// </summary>
-        [DataMember(Name = "status", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status", IsRequired = false, EmitDefaultValue = true)]
         public TransactionStatus Status { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Transaction" /> class.
@@ -63,14 +63,14 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Transaction and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Transaction and cannot be null");
             }
             this.Id = id;
             this.Status = status;
             // to ensure "subscription" is required (not null)
             if (subscription == null)
             {
-                throw new ArgumentNullException("subscription is a required property for Transaction and cannot be null");
+                //throw new ArgumentNullException("subscription is a required property for Transaction and cannot be null");
             }
             this.Subscription = subscription;
             this.Sandbox = sandbox;
@@ -79,7 +79,7 @@ namespace VRChat.API.Model
             // to ensure "error" is required (not null)
             if (error == null)
             {
-                throw new ArgumentNullException("error is a required property for Transaction and cannot be null");
+                //throw new ArgumentNullException("error is a required property for Transaction and cannot be null");
             }
             this.Error = error;
             this.UserId = userId;
@@ -93,7 +93,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
@@ -112,25 +112,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Subscription
         /// </summary>
-        [DataMember(Name = "subscription", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "subscription", IsRequired = false, EmitDefaultValue = true)]
         public Subscription Subscription { get; set; }
 
         /// <summary>
         /// Gets or Sets Sandbox
         /// </summary>
-        [DataMember(Name = "sandbox", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sandbox", IsRequired = false, EmitDefaultValue = true)]
         public bool Sandbox { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "created_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
-        [DataMember(Name = "updated_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updated_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>
@@ -148,7 +148,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Error
         /// </summary>
-        [DataMember(Name = "error", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "error", IsRequired = false, EmitDefaultValue = true)]
         public string Error { get; set; }
 
         /// <summary>

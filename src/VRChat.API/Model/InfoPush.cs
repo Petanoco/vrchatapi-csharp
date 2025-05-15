@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ReleaseStatus
         /// </summary>
-        [DataMember(Name = "releaseStatus", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "releaseStatus", IsRequired = false, EmitDefaultValue = true)]
         public ReleaseStatus ReleaseStatus { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="InfoPush" /> class.
@@ -61,7 +61,7 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for InfoPush and cannot be null");
+                //throw new ArgumentNullException("id is a required property for InfoPush and cannot be null");
             }
             this.Id = id;
             this.IsEnabled = isEnabled;
@@ -70,19 +70,19 @@ namespace VRChat.API.Model
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for InfoPush and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for InfoPush and cannot be null");
             }
             this.Tags = tags;
             // to ensure "data" is required (not null)
             if (data == null)
             {
-                throw new ArgumentNullException("data is a required property for InfoPush and cannot be null");
+                //throw new ArgumentNullException("data is a required property for InfoPush and cannot be null");
             }
             this.Data = data;
             // to ensure "hash" is required (not null)
             if (hash == null)
             {
-                throw new ArgumentNullException("hash is a required property for InfoPush and cannot be null");
+                //throw new ArgumentNullException("hash is a required property for InfoPush and cannot be null");
             }
             this.Hash = hash;
             this.CreatedAt = createdAt;
@@ -94,51 +94,51 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets IsEnabled
         /// </summary>
-        [DataMember(Name = "isEnabled", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "isEnabled", IsRequired = false, EmitDefaultValue = true)]
         public bool IsEnabled { get; set; }
 
         /// <summary>
         /// Gets or Sets Priority
         /// </summary>
-        [DataMember(Name = "priority", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "priority", IsRequired = false, EmitDefaultValue = true)]
         public int Priority { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         /// Gets or Sets Data
         /// </summary>
-        [DataMember(Name = "data", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "data", IsRequired = false, EmitDefaultValue = true)]
         public InfoPushData Data { get; set; }
 
         /// <summary>
         /// Unknown usage, MD5
         /// </summary>
         /// <value>Unknown usage, MD5</value>
-        [DataMember(Name = "hash", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "hash", IsRequired = false, EmitDefaultValue = true)]
         public string Hash { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "createdAt", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "createdAt", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
-        [DataMember(Name = "updatedAt", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updatedAt", IsRequired = false, EmitDefaultValue = true)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>

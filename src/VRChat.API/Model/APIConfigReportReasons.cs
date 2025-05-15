@@ -66,115 +66,115 @@ namespace VRChat.API.Model
             // to ensure "billing" is required (not null)
             if (billing == null)
             {
-                throw new ArgumentNullException("billing is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("billing is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Billing = billing;
             // to ensure "botting" is required (not null)
             if (botting == null)
             {
-                throw new ArgumentNullException("botting is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("botting is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Botting = botting;
             // to ensure "cancellation" is required (not null)
             if (cancellation == null)
             {
-                throw new ArgumentNullException("cancellation is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("cancellation is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Cancellation = cancellation;
             // to ensure "gore" is required (not null)
             if (gore == null)
             {
-                throw new ArgumentNullException("gore is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("gore is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Gore = gore;
             // to ensure "hacking" is required (not null)
             if (hacking == null)
             {
-                throw new ArgumentNullException("hacking is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("hacking is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Hacking = hacking;
             // to ensure "harassing" is required (not null)
             if (harassing == null)
             {
-                throw new ArgumentNullException("harassing is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("harassing is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Harassing = harassing;
             // to ensure "hateful" is required (not null)
             if (hateful == null)
             {
-                throw new ArgumentNullException("hateful is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("hateful is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Hateful = hateful;
             // to ensure "impersonation" is required (not null)
             if (impersonation == null)
             {
-                throw new ArgumentNullException("impersonation is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("impersonation is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Impersonation = impersonation;
             // to ensure "inappropriate" is required (not null)
             if (inappropriate == null)
             {
-                throw new ArgumentNullException("inappropriate is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("inappropriate is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Inappropriate = inappropriate;
             // to ensure "leaking" is required (not null)
             if (leaking == null)
             {
-                throw new ArgumentNullException("leaking is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("leaking is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Leaking = leaking;
             // to ensure "malicious" is required (not null)
             if (malicious == null)
             {
-                throw new ArgumentNullException("malicious is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("malicious is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Malicious = malicious;
             // to ensure "missing" is required (not null)
             if (missing == null)
             {
-                throw new ArgumentNullException("missing is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("missing is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Missing = missing;
             // to ensure "nudity" is required (not null)
             if (nudity == null)
             {
-                throw new ArgumentNullException("nudity is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("nudity is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Nudity = nudity;
             // to ensure "renewal" is required (not null)
             if (renewal == null)
             {
-                throw new ArgumentNullException("renewal is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("renewal is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Renewal = renewal;
             // to ensure "security" is required (not null)
             if (security == null)
             {
-                throw new ArgumentNullException("security is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("security is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Security = security;
             // to ensure "service" is required (not null)
             if (service == null)
             {
-                throw new ArgumentNullException("service is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("service is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Service = service;
             // to ensure "sexual" is required (not null)
             if (sexual == null)
             {
-                throw new ArgumentNullException("sexual is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("sexual is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Sexual = sexual;
             // to ensure "threatening" is required (not null)
             if (threatening == null)
             {
-                throw new ArgumentNullException("threatening is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("threatening is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Threatening = threatening;
             // to ensure "visuals" is required (not null)
             if (visuals == null)
             {
-                throw new ArgumentNullException("visuals is a required property for APIConfigReportReasons and cannot be null");
+                //throw new ArgumentNullException("visuals is a required property for APIConfigReportReasons and cannot be null");
             }
             this.Visuals = visuals;
             this.Copyright = copyright;
@@ -185,19 +185,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Billing
         /// </summary>
-        [DataMember(Name = "billing", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "billing", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Billing { get; set; }
 
         /// <summary>
         /// Gets or Sets Botting
         /// </summary>
-        [DataMember(Name = "botting", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "botting", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Botting { get; set; }
 
         /// <summary>
         /// Gets or Sets Cancellation
         /// </summary>
-        [DataMember(Name = "cancellation", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "cancellation", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Cancellation { get; set; }
 
         /// <summary>
@@ -215,85 +215,85 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Gore
         /// </summary>
-        [DataMember(Name = "gore", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "gore", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Gore { get; set; }
 
         /// <summary>
         /// Gets or Sets Hacking
         /// </summary>
-        [DataMember(Name = "hacking", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "hacking", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Hacking { get; set; }
 
         /// <summary>
         /// Gets or Sets Harassing
         /// </summary>
-        [DataMember(Name = "harassing", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "harassing", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Harassing { get; set; }
 
         /// <summary>
         /// Gets or Sets Hateful
         /// </summary>
-        [DataMember(Name = "hateful", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "hateful", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Hateful { get; set; }
 
         /// <summary>
         /// Gets or Sets Impersonation
         /// </summary>
-        [DataMember(Name = "impersonation", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "impersonation", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Impersonation { get; set; }
 
         /// <summary>
         /// Gets or Sets Inappropriate
         /// </summary>
-        [DataMember(Name = "inappropriate", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "inappropriate", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Inappropriate { get; set; }
 
         /// <summary>
         /// Gets or Sets Leaking
         /// </summary>
-        [DataMember(Name = "leaking", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "leaking", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Leaking { get; set; }
 
         /// <summary>
         /// Gets or Sets Malicious
         /// </summary>
-        [DataMember(Name = "malicious", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "malicious", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Malicious { get; set; }
 
         /// <summary>
         /// Gets or Sets Missing
         /// </summary>
-        [DataMember(Name = "missing", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "missing", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Missing { get; set; }
 
         /// <summary>
         /// Gets or Sets Nudity
         /// </summary>
-        [DataMember(Name = "nudity", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "nudity", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Nudity { get; set; }
 
         /// <summary>
         /// Gets or Sets Renewal
         /// </summary>
-        [DataMember(Name = "renewal", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "renewal", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Renewal { get; set; }
 
         /// <summary>
         /// Gets or Sets Security
         /// </summary>
-        [DataMember(Name = "security", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "security", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Security { get; set; }
 
         /// <summary>
         /// Gets or Sets Service
         /// </summary>
-        [DataMember(Name = "service", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "service", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Service { get; set; }
 
         /// <summary>
         /// Gets or Sets Sexual
         /// </summary>
-        [DataMember(Name = "sexual", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sexual", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Sexual { get; set; }
 
         /// <summary>
@@ -305,13 +305,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Threatening
         /// </summary>
-        [DataMember(Name = "threatening", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "threatening", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Threatening { get; set; }
 
         /// <summary>
         /// Gets or Sets Visuals
         /// </summary>
-        [DataMember(Name = "visuals", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "visuals", IsRequired = false, EmitDefaultValue = true)]
         public ReportReason Visuals { get; set; }
 
         /// <summary>

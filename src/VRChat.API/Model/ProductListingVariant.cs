@@ -50,7 +50,7 @@ namespace VRChat.API.Model
             // to ensure "listingVariantId" is required (not null)
             if (listingVariantId == null)
             {
-                throw new ArgumentNullException("listingVariantId is a required property for ProductListingVariant and cannot be null");
+                //throw new ArgumentNullException("listingVariantId is a required property for ProductListingVariant and cannot be null");
             }
             this.ListingVariantId = listingVariantId;
             this.NonRefundable = nonRefundable;
@@ -69,31 +69,31 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ListingVariantId
         /// </summary>
-        [DataMember(Name = "listingVariantId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "listingVariantId", IsRequired = false, EmitDefaultValue = true)]
         public string ListingVariantId { get; set; }
 
         /// <summary>
         /// Gets or Sets NonRefundable
         /// </summary>
-        [DataMember(Name = "nonRefundable", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "nonRefundable", IsRequired = false, EmitDefaultValue = true)]
         public bool NonRefundable { get; set; }
 
         /// <summary>
         /// Gets or Sets Quantity
         /// </summary>
-        [DataMember(Name = "quantity", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "quantity", IsRequired = false, EmitDefaultValue = true)]
         public int Quantity { get; set; }
 
         /// <summary>
         /// Gets or Sets SellerVariant
         /// </summary>
-        [DataMember(Name = "sellerVariant", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sellerVariant", IsRequired = false, EmitDefaultValue = true)]
         public bool SellerVariant { get; set; }
 
         /// <summary>
         /// Gets or Sets UnitPriceTokens
         /// </summary>
-        [DataMember(Name = "unitPriceTokens", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "unitPriceTokens", IsRequired = false, EmitDefaultValue = true)]
         public int UnitPriceTokens { get; set; }
 
         /// <summary>

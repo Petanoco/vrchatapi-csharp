@@ -50,7 +50,7 @@ namespace VRChat.API.Model
             // to ensure "avatarStats" is required (not null)
             if (avatarStats == null)
             {
-                throw new ArgumentNullException("avatarStats is a required property for FileAnalysis and cannot be null");
+                //throw new ArgumentNullException("avatarStats is a required property for FileAnalysis and cannot be null");
             }
             this.AvatarStats = avatarStats;
             this.FileSize = fileSize;
@@ -63,7 +63,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets AvatarStats
         /// </summary>
-        [DataMember(Name = "avatarStats", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "avatarStats", IsRequired = false, EmitDefaultValue = true)]
         public FileAnalysisAvatarStats AvatarStats { get; set; }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets FileSize
         /// </summary>
-        [DataMember(Name = "fileSize", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "fileSize", IsRequired = false, EmitDefaultValue = true)]
         public int FileSize { get; set; }
 
         /// <summary>
@@ -87,13 +87,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Success
         /// </summary>
-        [DataMember(Name = "success", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "success", IsRequired = false, EmitDefaultValue = true)]
         public bool Success { get; set; }
 
         /// <summary>
         /// Gets or Sets UncompressedSize
         /// </summary>
-        [DataMember(Name = "uncompressedSize", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "uncompressedSize", IsRequired = false, EmitDefaultValue = true)]
         public int UncompressedSize { get; set; }
 
         /// <summary>

@@ -48,13 +48,13 @@ namespace VRChat.API.Model
             // to ensure "serverName" is required (not null)
             if (serverName == null)
             {
-                throw new ArgumentNullException("serverName is a required property for APIHealth and cannot be null");
+                //throw new ArgumentNullException("serverName is a required property for APIHealth and cannot be null");
             }
             this.ServerName = serverName;
             // to ensure "buildVersionTag" is required (not null)
             if (buildVersionTag == null)
             {
-                throw new ArgumentNullException("buildVersionTag is a required property for APIHealth and cannot be null");
+                //throw new ArgumentNullException("buildVersionTag is a required property for APIHealth and cannot be null");
             }
             this.BuildVersionTag = buildVersionTag;
         }
@@ -62,19 +62,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Ok
         /// </summary>
-        [DataMember(Name = "ok", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "ok", IsRequired = false, EmitDefaultValue = true)]
         public bool Ok { get; set; }
 
         /// <summary>
         /// Gets or Sets ServerName
         /// </summary>
-        [DataMember(Name = "serverName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "serverName", IsRequired = false, EmitDefaultValue = true)]
         public string ServerName { get; set; }
 
         /// <summary>
         /// Gets or Sets BuildVersionTag
         /// </summary>
-        [DataMember(Name = "buildVersionTag", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "buildVersionTag", IsRequired = false, EmitDefaultValue = true)]
         public string BuildVersionTag { get; set; }
 
         /// <summary>

@@ -35,13 +35,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public FavoriteType Type { get; set; }
 
         /// <summary>
         /// Gets or Sets Visibility
         /// </summary>
-        [DataMember(Name = "visibility", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "visibility", IsRequired = false, EmitDefaultValue = true)]
         public FavoriteGroupVisibility Visibility { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="FavoriteGroup" /> class.
@@ -64,37 +64,37 @@ namespace VRChat.API.Model
             // to ensure "displayName" is required (not null)
             if (displayName == null)
             {
-                throw new ArgumentNullException("displayName is a required property for FavoriteGroup and cannot be null");
+                //throw new ArgumentNullException("displayName is a required property for FavoriteGroup and cannot be null");
             }
             this.DisplayName = displayName;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for FavoriteGroup and cannot be null");
+                //throw new ArgumentNullException("id is a required property for FavoriteGroup and cannot be null");
             }
             this.Id = id;
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for FavoriteGroup and cannot be null");
+                //throw new ArgumentNullException("name is a required property for FavoriteGroup and cannot be null");
             }
             this.Name = name;
             // to ensure "ownerDisplayName" is required (not null)
             if (ownerDisplayName == null)
             {
-                throw new ArgumentNullException("ownerDisplayName is a required property for FavoriteGroup and cannot be null");
+                //throw new ArgumentNullException("ownerDisplayName is a required property for FavoriteGroup and cannot be null");
             }
             this.OwnerDisplayName = ownerDisplayName;
             // to ensure "ownerId" is required (not null)
             if (ownerId == null)
             {
-                throw new ArgumentNullException("ownerId is a required property for FavoriteGroup and cannot be null");
+                //throw new ArgumentNullException("ownerId is a required property for FavoriteGroup and cannot be null");
             }
             this.OwnerId = ownerId;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for FavoriteGroup and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for FavoriteGroup and cannot be null");
             }
             this.Tags = tags;
             this.Type = type;
@@ -104,39 +104,39 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets DisplayName
         /// </summary>
-        [DataMember(Name = "displayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "displayName", IsRequired = false, EmitDefaultValue = true)]
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets OwnerDisplayName
         /// </summary>
-        [DataMember(Name = "ownerDisplayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "ownerDisplayName", IsRequired = false, EmitDefaultValue = true)]
         public string OwnerDisplayName { get; set; }
 
         /// <summary>
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "ownerId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "ownerId", IsRequired = false, EmitDefaultValue = true)]
         public string OwnerId { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>

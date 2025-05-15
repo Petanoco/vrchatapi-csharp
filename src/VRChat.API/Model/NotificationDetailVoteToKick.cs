@@ -46,13 +46,13 @@ namespace VRChat.API.Model
             // to ensure "initiatorUserId" is required (not null)
             if (initiatorUserId == null)
             {
-                throw new ArgumentNullException("initiatorUserId is a required property for NotificationDetailVoteToKick and cannot be null");
+                //throw new ArgumentNullException("initiatorUserId is a required property for NotificationDetailVoteToKick and cannot be null");
             }
             this.InitiatorUserId = initiatorUserId;
             // to ensure "userToKickId" is required (not null)
             if (userToKickId == null)
             {
-                throw new ArgumentNullException("userToKickId is a required property for NotificationDetailVoteToKick and cannot be null");
+                //throw new ArgumentNullException("userToKickId is a required property for NotificationDetailVoteToKick and cannot be null");
             }
             this.UserToKickId = userToKickId;
         }
@@ -61,14 +61,14 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "initiatorUserId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "initiatorUserId", IsRequired = false, EmitDefaultValue = true)]
         public string InitiatorUserId { get; set; }
 
         /// <summary>
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "userToKickId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "userToKickId", IsRequired = false, EmitDefaultValue = true)]
         public string UserToKickId { get; set; }
 
         /// <summary>

@@ -46,7 +46,7 @@ namespace VRChat.API.Model
             // to ensure "instanceId" is required (not null)
             if (instanceId == null)
             {
-                throw new ArgumentNullException("instanceId is a required property for InviteRequest and cannot be null");
+                //throw new ArgumentNullException("instanceId is a required property for InviteRequest and cannot be null");
             }
             this.InstanceId = instanceId;
             this.MessageSlot = messageSlot;
@@ -56,7 +56,7 @@ namespace VRChat.API.Model
         /// InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.
         /// </summary>
         /// <value>InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.</value>
-        [DataMember(Name = "instanceId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "instanceId", IsRequired = false, EmitDefaultValue = true)]
         public string InstanceId { get; set; }
 
         /// <summary>

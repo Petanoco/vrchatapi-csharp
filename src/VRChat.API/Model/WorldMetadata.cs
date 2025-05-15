@@ -46,13 +46,13 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for WorldMetadata and cannot be null");
+                //throw new ArgumentNullException("id is a required property for WorldMetadata and cannot be null");
             }
             this.Id = id;
             // to ensure "metadata" is required (not null)
             if (metadata == null)
             {
-                throw new ArgumentNullException("metadata is a required property for WorldMetadata and cannot be null");
+                //throw new ArgumentNullException("metadata is a required property for WorldMetadata and cannot be null");
             }
             this.Metadata = metadata;
         }
@@ -61,13 +61,13 @@ namespace VRChat.API.Model
         /// WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.
         /// </summary>
         /// <value>WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.</value>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Metadata
         /// </summary>
-        [DataMember(Name = "metadata", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "metadata", IsRequired = false, EmitDefaultValue = true)]
         public Object Metadata { get; set; }
 
         /// <summary>

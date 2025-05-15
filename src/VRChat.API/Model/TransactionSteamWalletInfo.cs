@@ -48,25 +48,25 @@ namespace VRChat.API.Model
             // to ensure "state" is required (not null)
             if (state == null)
             {
-                throw new ArgumentNullException("state is a required property for TransactionSteamWalletInfo and cannot be null");
+                //throw new ArgumentNullException("state is a required property for TransactionSteamWalletInfo and cannot be null");
             }
             this.State = state;
             // to ensure "country" is required (not null)
             if (country == null)
             {
-                throw new ArgumentNullException("country is a required property for TransactionSteamWalletInfo and cannot be null");
+                //throw new ArgumentNullException("country is a required property for TransactionSteamWalletInfo and cannot be null");
             }
             this.Country = country;
             // to ensure "currency" is required (not null)
             if (currency == null)
             {
-                throw new ArgumentNullException("currency is a required property for TransactionSteamWalletInfo and cannot be null");
+                //throw new ArgumentNullException("currency is a required property for TransactionSteamWalletInfo and cannot be null");
             }
             this.Currency = currency;
             // to ensure "status" is required (not null)
             if (status == null)
             {
-                throw new ArgumentNullException("status is a required property for TransactionSteamWalletInfo and cannot be null");
+                //throw new ArgumentNullException("status is a required property for TransactionSteamWalletInfo and cannot be null");
             }
             this.Status = status;
         }
@@ -74,25 +74,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets State
         /// </summary>
-        [DataMember(Name = "state", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "state", IsRequired = false, EmitDefaultValue = true)]
         public string State { get; set; }
 
         /// <summary>
         /// Gets or Sets Country
         /// </summary>
-        [DataMember(Name = "country", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "country", IsRequired = false, EmitDefaultValue = true)]
         public string Country { get; set; }
 
         /// <summary>
         /// Gets or Sets Currency
         /// </summary>
-        [DataMember(Name = "currency", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "currency", IsRequired = false, EmitDefaultValue = true)]
         public string Currency { get; set; }
 
         /// <summary>
         /// Gets or Sets Status
         /// </summary>
-        [DataMember(Name = "status", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status", IsRequired = false, EmitDefaultValue = true)]
         public string Status { get; set; }
 
         /// <summary>

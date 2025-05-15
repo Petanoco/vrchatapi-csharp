@@ -52,31 +52,31 @@ namespace VRChat.API.Model
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for DynamicContentRow and cannot be null");
+                //throw new ArgumentNullException("name is a required property for DynamicContentRow and cannot be null");
             }
             this.Name = name;
             // to ensure "platform" is required (not null)
             if (platform == null)
             {
-                throw new ArgumentNullException("platform is a required property for DynamicContentRow and cannot be null");
+                //throw new ArgumentNullException("platform is a required property for DynamicContentRow and cannot be null");
             }
             this.Platform = platform;
             // to ensure "sortHeading" is required (not null)
             if (sortHeading == null)
             {
-                throw new ArgumentNullException("sortHeading is a required property for DynamicContentRow and cannot be null");
+                //throw new ArgumentNullException("sortHeading is a required property for DynamicContentRow and cannot be null");
             }
             this.SortHeading = sortHeading;
             // to ensure "sortOrder" is required (not null)
             if (sortOrder == null)
             {
-                throw new ArgumentNullException("sortOrder is a required property for DynamicContentRow and cannot be null");
+                //throw new ArgumentNullException("sortOrder is a required property for DynamicContentRow and cannot be null");
             }
             this.SortOrder = sortOrder;
             // to ensure "sortOwnership" is required (not null)
             if (sortOwnership == null)
             {
-                throw new ArgumentNullException("sortOwnership is a required property for DynamicContentRow and cannot be null");
+                //throw new ArgumentNullException("sortOwnership is a required property for DynamicContentRow and cannot be null");
             }
             this.SortOwnership = sortOwnership;
             this.Index = index;
@@ -93,32 +93,32 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Usually \&quot;ThisPlatformSupported\&quot;, but can also be other values such as \&quot;all\&quot; or platform specific identifiers.
         /// </summary>
         /// <value>Usually \&quot;ThisPlatformSupported\&quot;, but can also be other values such as \&quot;all\&quot; or platform specific identifiers.</value>
-        [DataMember(Name = "platform", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "platform", IsRequired = false, EmitDefaultValue = true)]
         public string Platform { get; set; }
 
         /// <summary>
         /// Gets or Sets SortHeading
         /// </summary>
-        [DataMember(Name = "sortHeading", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sortHeading", IsRequired = false, EmitDefaultValue = true)]
         public string SortHeading { get; set; }
 
         /// <summary>
         /// Gets or Sets SortOrder
         /// </summary>
-        [DataMember(Name = "sortOrder", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sortOrder", IsRequired = false, EmitDefaultValue = true)]
         public string SortOrder { get; set; }
 
         /// <summary>
         /// Gets or Sets SortOwnership
         /// </summary>
-        [DataMember(Name = "sortOwnership", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sortOwnership", IsRequired = false, EmitDefaultValue = true)]
         public string SortOwnership { get; set; }
 
         /// <summary>

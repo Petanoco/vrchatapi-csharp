@@ -52,25 +52,25 @@ namespace VRChat.API.Model
             // to ensure "badgeDescription" is required (not null)
             if (badgeDescription == null)
             {
-                throw new ArgumentNullException("badgeDescription is a required property for Badge and cannot be null");
+                //throw new ArgumentNullException("badgeDescription is a required property for Badge and cannot be null");
             }
             this.BadgeDescription = badgeDescription;
             // to ensure "badgeId" is required (not null)
             if (badgeId == null)
             {
-                throw new ArgumentNullException("badgeId is a required property for Badge and cannot be null");
+                //throw new ArgumentNullException("badgeId is a required property for Badge and cannot be null");
             }
             this.BadgeId = badgeId;
             // to ensure "badgeImageUrl" is required (not null)
             if (badgeImageUrl == null)
             {
-                throw new ArgumentNullException("badgeImageUrl is a required property for Badge and cannot be null");
+                //throw new ArgumentNullException("badgeImageUrl is a required property for Badge and cannot be null");
             }
             this.BadgeImageUrl = badgeImageUrl;
             // to ensure "badgeName" is required (not null)
             if (badgeName == null)
             {
-                throw new ArgumentNullException("badgeName is a required property for Badge and cannot be null");
+                //throw new ArgumentNullException("badgeName is a required property for Badge and cannot be null");
             }
             this.BadgeName = badgeName;
             this.Showcased = showcased;
@@ -89,26 +89,26 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets BadgeDescription
         /// </summary>
-        [DataMember(Name = "badgeDescription", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "badgeDescription", IsRequired = false, EmitDefaultValue = true)]
         public string BadgeDescription { get; set; }
 
         /// <summary>
         /// Gets or Sets BadgeId
         /// </summary>
-        [DataMember(Name = "badgeId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "badgeId", IsRequired = false, EmitDefaultValue = true)]
         public string BadgeId { get; set; }
 
         /// <summary>
         /// direct url to image
         /// </summary>
         /// <value>direct url to image</value>
-        [DataMember(Name = "badgeImageUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "badgeImageUrl", IsRequired = false, EmitDefaultValue = true)]
         public string BadgeImageUrl { get; set; }
 
         /// <summary>
         /// Gets or Sets BadgeName
         /// </summary>
-        [DataMember(Name = "badgeName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "badgeName", IsRequired = false, EmitDefaultValue = true)]
         public string BadgeName { get; set; }
 
         /// <summary>
@@ -121,7 +121,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Showcased
         /// </summary>
-        [DataMember(Name = "showcased", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "showcased", IsRequired = false, EmitDefaultValue = true)]
         public bool Showcased { get; set; }
 
         /// <summary>

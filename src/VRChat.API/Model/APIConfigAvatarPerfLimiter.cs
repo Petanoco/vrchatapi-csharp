@@ -50,37 +50,37 @@ namespace VRChat.API.Model
             // to ensure "androidMobile" is required (not null)
             if (androidMobile == null)
             {
-                throw new ArgumentNullException("androidMobile is a required property for APIConfigAvatarPerfLimiter and cannot be null");
+                //throw new ArgumentNullException("androidMobile is a required property for APIConfigAvatarPerfLimiter and cannot be null");
             }
             this.AndroidMobile = androidMobile;
             // to ensure "pC" is required (not null)
             if (pC == null)
             {
-                throw new ArgumentNullException("pC is a required property for APIConfigAvatarPerfLimiter and cannot be null");
+                //throw new ArgumentNullException("pC is a required property for APIConfigAvatarPerfLimiter and cannot be null");
             }
             this.PC = pC;
             // to ensure "pico" is required (not null)
             if (pico == null)
             {
-                throw new ArgumentNullException("pico is a required property for APIConfigAvatarPerfLimiter and cannot be null");
+                //throw new ArgumentNullException("pico is a required property for APIConfigAvatarPerfLimiter and cannot be null");
             }
             this.Pico = pico;
             // to ensure "quest" is required (not null)
             if (quest == null)
             {
-                throw new ArgumentNullException("quest is a required property for APIConfigAvatarPerfLimiter and cannot be null");
+                //throw new ArgumentNullException("quest is a required property for APIConfigAvatarPerfLimiter and cannot be null");
             }
             this.Quest = quest;
             // to ensure "xRElite" is required (not null)
             if (xRElite == null)
             {
-                throw new ArgumentNullException("xRElite is a required property for APIConfigAvatarPerfLimiter and cannot be null");
+                //throw new ArgumentNullException("xRElite is a required property for APIConfigAvatarPerfLimiter and cannot be null");
             }
             this.XRElite = xRElite;
             // to ensure "iOSMobile" is required (not null)
             if (iOSMobile == null)
             {
-                throw new ArgumentNullException("iOSMobile is a required property for APIConfigAvatarPerfLimiter and cannot be null");
+                //throw new ArgumentNullException("iOSMobile is a required property for APIConfigAvatarPerfLimiter and cannot be null");
             }
             this.IOSMobile = iOSMobile;
         }
@@ -88,37 +88,37 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets AndroidMobile
         /// </summary>
-        [DataMember(Name = "AndroidMobile", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "AndroidMobile", IsRequired = false, EmitDefaultValue = true)]
         public PerformanceLimiterInfo AndroidMobile { get; set; }
 
         /// <summary>
         /// Gets or Sets PC
         /// </summary>
-        [DataMember(Name = "PC", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "PC", IsRequired = false, EmitDefaultValue = true)]
         public PerformanceLimiterInfo PC { get; set; }
 
         /// <summary>
         /// Gets or Sets Pico
         /// </summary>
-        [DataMember(Name = "Pico", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "Pico", IsRequired = false, EmitDefaultValue = true)]
         public PerformanceLimiterInfo Pico { get; set; }
 
         /// <summary>
         /// Gets or Sets Quest
         /// </summary>
-        [DataMember(Name = "Quest", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "Quest", IsRequired = false, EmitDefaultValue = true)]
         public PerformanceLimiterInfo Quest { get; set; }
 
         /// <summary>
         /// Gets or Sets XRElite
         /// </summary>
-        [DataMember(Name = "XRElite", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "XRElite", IsRequired = false, EmitDefaultValue = true)]
         public PerformanceLimiterInfo XRElite { get; set; }
 
         /// <summary>
         /// Gets or Sets IOSMobile
         /// </summary>
-        [DataMember(Name = "iOSMobile", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "iOSMobile", IsRequired = false, EmitDefaultValue = true)]
         public PerformanceLimiterInfo IOSMobile { get; set; }
 
         /// <summary>

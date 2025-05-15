@@ -47,7 +47,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets RoleTemplate
         /// </summary>
-        [DataMember(Name = "roleTemplate", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "roleTemplate", IsRequired = false, EmitDefaultValue = true)]
         public GroupRoleTemplate RoleTemplate { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateGroupRequest" /> class.
@@ -70,13 +70,13 @@ namespace VRChat.API.Model
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for CreateGroupRequest and cannot be null");
+                //throw new ArgumentNullException("name is a required property for CreateGroupRequest and cannot be null");
             }
             this.Name = name;
             // to ensure "shortCode" is required (not null)
             if (shortCode == null)
             {
-                throw new ArgumentNullException("shortCode is a required property for CreateGroupRequest and cannot be null");
+                //throw new ArgumentNullException("shortCode is a required property for CreateGroupRequest and cannot be null");
             }
             this.ShortCode = shortCode;
             this.RoleTemplate = roleTemplate;
@@ -90,13 +90,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets ShortCode
         /// </summary>
-        [DataMember(Name = "shortCode", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "shortCode", IsRequired = false, EmitDefaultValue = true)]
         public string ShortCode { get; set; }
 
         /// <summary>

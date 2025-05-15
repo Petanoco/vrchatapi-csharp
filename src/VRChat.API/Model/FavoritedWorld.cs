@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ReleaseStatus
         /// </summary>
-        [DataMember(Name = "releaseStatus", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "releaseStatus", IsRequired = false, EmitDefaultValue = true)]
         public ReleaseStatus ReleaseStatus { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="FavoritedWorld" /> class.
@@ -79,20 +79,20 @@ namespace VRChat.API.Model
             // to ensure "authorId" is required (not null)
             if (authorId == null)
             {
-                throw new ArgumentNullException("authorId is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("authorId is a required property for FavoritedWorld and cannot be null");
             }
             this.AuthorId = authorId;
             // to ensure "authorName" is required (not null)
             if (authorName == null)
             {
-                throw new ArgumentNullException("authorName is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("authorName is a required property for FavoritedWorld and cannot be null");
             }
             this.AuthorName = authorName;
             this.Capacity = capacity;
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("description is a required property for FavoritedWorld and cannot be null");
             }
             this.Description = description;
             this.CreatedAt = createdAt;
@@ -100,13 +100,13 @@ namespace VRChat.API.Model
             // to ensure "favoriteGroup" is required (not null)
             if (favoriteGroup == null)
             {
-                throw new ArgumentNullException("favoriteGroup is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("favoriteGroup is a required property for FavoritedWorld and cannot be null");
             }
             this.FavoriteGroup = favoriteGroup;
             // to ensure "favoriteId" is required (not null)
             if (favoriteId == null)
             {
-                throw new ArgumentNullException("favoriteId is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("favoriteId is a required property for FavoritedWorld and cannot be null");
             }
             this.FavoriteId = favoriteId;
             this.Featured = featured;
@@ -114,65 +114,65 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("id is a required property for FavoritedWorld and cannot be null");
             }
             this.Id = id;
             // to ensure "imageUrl" is required (not null)
             if (imageUrl == null)
             {
-                throw new ArgumentNullException("imageUrl is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("imageUrl is a required property for FavoritedWorld and cannot be null");
             }
             this.ImageUrl = imageUrl;
             // to ensure "labsPublicationDate" is required (not null)
             if (labsPublicationDate == null)
             {
-                throw new ArgumentNullException("labsPublicationDate is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("labsPublicationDate is a required property for FavoritedWorld and cannot be null");
             }
             this.LabsPublicationDate = labsPublicationDate;
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("name is a required property for FavoritedWorld and cannot be null");
             }
             this.Name = name;
             this.Occupants = occupants;
             // to ensure "organization" is required (not null)
             if (organization == null)
             {
-                throw new ArgumentNullException("organization is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("organization is a required property for FavoritedWorld and cannot be null");
             }
             this.Organization = organization;
             this.Popularity = popularity;
             // to ensure "publicationDate" is required (not null)
             if (publicationDate == null)
             {
-                throw new ArgumentNullException("publicationDate is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("publicationDate is a required property for FavoritedWorld and cannot be null");
             }
             this.PublicationDate = publicationDate;
             this.ReleaseStatus = releaseStatus;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("tags is a required property for FavoritedWorld and cannot be null");
             }
             this.Tags = tags;
             // to ensure "thumbnailImageUrl" is required (not null)
             if (thumbnailImageUrl == null)
             {
-                throw new ArgumentNullException("thumbnailImageUrl is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("thumbnailImageUrl is a required property for FavoritedWorld and cannot be null");
             }
             this.ThumbnailImageUrl = thumbnailImageUrl;
             // to ensure "unityPackages" is required (not null)
             if (unityPackages == null)
             {
-                throw new ArgumentNullException("unityPackages is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("unityPackages is a required property for FavoritedWorld and cannot be null");
             }
             this.UnityPackages = unityPackages;
             this.UpdatedAt = updatedAt;
             // to ensure "urlList" is required (not null)
             if (urlList == null)
             {
-                throw new ArgumentNullException("urlList is a required property for FavoritedWorld and cannot be null");
+                // //throw new ArgumentNullException("urlList is a required property for FavoritedWorld and cannot be null");
             }
             this.UrlList = urlList;
             this._Version = version;
@@ -186,25 +186,25 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "authorId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "authorId", IsRequired = false, EmitDefaultValue = true)]
         public string AuthorId { get; set; }
 
         /// <summary>
         /// Gets or Sets AuthorName
         /// </summary>
-        [DataMember(Name = "authorName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "authorName", IsRequired = false, EmitDefaultValue = true)]
         public string AuthorName { get; set; }
 
         /// <summary>
         /// Gets or Sets Capacity
         /// </summary>
-        [DataMember(Name = "capacity", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "capacity", IsRequired = false, EmitDefaultValue = true)]
         public int Capacity { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
@@ -216,31 +216,31 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "created_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets Favorites
         /// </summary>
-        [DataMember(Name = "favorites", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "favorites", IsRequired = false, EmitDefaultValue = true)]
         public int Favorites { get; set; }
 
         /// <summary>
         /// Gets or Sets FavoriteGroup
         /// </summary>
-        [DataMember(Name = "favoriteGroup", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "favoriteGroup", IsRequired = false, EmitDefaultValue = true)]
         public string FavoriteGroup { get; set; }
 
         /// <summary>
         /// Gets or Sets FavoriteId
         /// </summary>
-        [DataMember(Name = "favoriteId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "favoriteId", IsRequired = false, EmitDefaultValue = true)]
         public string FavoriteId { get; set; }
 
         /// <summary>
         /// Gets or Sets Featured
         /// </summary>
-        [DataMember(Name = "featured", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "featured", IsRequired = false, EmitDefaultValue = true)]
         public bool Featured { get; set; }
 
         /// <summary>
@@ -252,50 +252,50 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Heat
         /// </summary>
-        [DataMember(Name = "heat", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "heat", IsRequired = false, EmitDefaultValue = true)]
         public int Heat { get; set; }
 
         /// <summary>
         /// WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.
         /// </summary>
         /// <value>WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.</value>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageUrl
         /// </summary>
-        [DataMember(Name = "imageUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "imageUrl", IsRequired = false, EmitDefaultValue = true)]
         public string ImageUrl { get; set; }
 
         /// <summary>
         /// Gets or Sets LabsPublicationDate
         /// </summary>
-        [DataMember(Name = "labsPublicationDate", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "labsPublicationDate", IsRequired = false, EmitDefaultValue = true)]
         public string LabsPublicationDate { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets Occupants
         /// </summary>
-        [DataMember(Name = "occupants", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "occupants", IsRequired = false, EmitDefaultValue = true)]
         public int Occupants { get; set; }
 
         /// <summary>
         /// Gets or Sets Organization
         /// </summary>
-        [DataMember(Name = "organization", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "organization", IsRequired = false, EmitDefaultValue = true)]
         public string Organization { get; set; }
 
         /// <summary>
         /// Gets or Sets Popularity
         /// </summary>
-        [DataMember(Name = "popularity", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "popularity", IsRequired = false, EmitDefaultValue = true)]
         public int Popularity { get; set; }
 
         /// <summary>
@@ -307,39 +307,39 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets PublicationDate
         /// </summary>
-        [DataMember(Name = "publicationDate", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "publicationDate", IsRequired = false, EmitDefaultValue = true)]
         public string PublicationDate { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         /// Gets or Sets ThumbnailImageUrl
         /// </summary>
-        [DataMember(Name = "thumbnailImageUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "thumbnailImageUrl", IsRequired = false, EmitDefaultValue = true)]
         public string ThumbnailImageUrl { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "unityPackages", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "unityPackages", IsRequired = false, EmitDefaultValue = true)]
         public List<UnityPackage> UnityPackages { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
-        [DataMember(Name = "updated_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updated_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets UrlList
         /// </summary>
-        [DataMember(Name = "urlList", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "urlList", IsRequired = false, EmitDefaultValue = true)]
         public List<string> UrlList { get; set; }
 
         /// <summary>
@@ -351,7 +351,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets _Version
         /// </summary>
-        [DataMember(Name = "version", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "version", IsRequired = false, EmitDefaultValue = true)]
         public int _Version { get; set; }
 
         /// <summary>

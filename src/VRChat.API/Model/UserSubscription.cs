@@ -35,13 +35,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Period
         /// </summary>
-        [DataMember(Name = "period", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "period", IsRequired = false, EmitDefaultValue = true)]
         public SubscriptionPeriod Period { get; set; }
 
         /// <summary>
         /// Gets or Sets Status
         /// </summary>
-        [DataMember(Name = "status", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status", IsRequired = false, EmitDefaultValue = true)]
         public TransactionStatus Status { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="UserSubscription" /> class.
@@ -73,26 +73,26 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for UserSubscription and cannot be null");
+                //throw new ArgumentNullException("id is a required property for UserSubscription and cannot be null");
             }
             this.Id = id;
             // to ensure "transactionId" is required (not null)
             if (transactionId == null)
             {
-                throw new ArgumentNullException("transactionId is a required property for UserSubscription and cannot be null");
+                //throw new ArgumentNullException("transactionId is a required property for UserSubscription and cannot be null");
             }
             this.TransactionId = transactionId;
             // to ensure "store" is required (not null)
             if (store == null)
             {
-                throw new ArgumentNullException("store is a required property for UserSubscription and cannot be null");
+                //throw new ArgumentNullException("store is a required property for UserSubscription and cannot be null");
             }
             this.Store = store;
             this.Amount = amount;
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for UserSubscription and cannot be null");
+                //throw new ArgumentNullException("description is a required property for UserSubscription and cannot be null");
             }
             this.Description = description;
             this.Period = period;
@@ -105,7 +105,7 @@ namespace VRChat.API.Model
             // to ensure "licenseGroups" is required (not null)
             if (licenseGroups == null)
             {
-                throw new ArgumentNullException("licenseGroups is a required property for UserSubscription and cannot be null");
+                //throw new ArgumentNullException("licenseGroups is a required property for UserSubscription and cannot be null");
             }
             this.LicenseGroups = licenseGroups;
             this.IsGift = isGift;
@@ -117,20 +117,20 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets TransactionId
         /// </summary>
-        [DataMember(Name = "transactionId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "transactionId", IsRequired = false, EmitDefaultValue = true)]
         public string TransactionId { get; set; }
 
         /// <summary>
         /// Which \&quot;Store\&quot; it came from. Right now only Stores are \&quot;Steam\&quot; and \&quot;Admin\&quot;.
         /// </summary>
         /// <value>Which \&quot;Store\&quot; it came from. Right now only Stores are \&quot;Steam\&quot; and \&quot;Admin\&quot;.</value>
-        [DataMember(Name = "store", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "store", IsRequired = false, EmitDefaultValue = true)]
         public string Store { get; set; }
 
         /// <summary>
@@ -142,25 +142,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Amount
         /// </summary>
-        [DataMember(Name = "amount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "amount", IsRequired = false, EmitDefaultValue = true)]
         public decimal Amount { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets Tier
         /// </summary>
-        [DataMember(Name = "tier", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tier", IsRequired = false, EmitDefaultValue = true)]
         public int Tier { get; set; }
 
         /// <summary>
         /// Gets or Sets Active
         /// </summary>
-        [DataMember(Name = "active", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "active", IsRequired = false, EmitDefaultValue = true)]
         public bool Active { get; set; }
 
         /// <summary>
@@ -172,37 +172,37 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Expires
         /// </summary>
-        [DataMember(Name = "expires", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "expires", IsRequired = false, EmitDefaultValue = true)]
         public DateTime Expires { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "created_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
-        [DataMember(Name = "updated_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updated_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets LicenseGroups
         /// </summary>
-        [DataMember(Name = "licenseGroups", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "licenseGroups", IsRequired = false, EmitDefaultValue = true)]
         public List<string> LicenseGroups { get; set; }
 
         /// <summary>
         /// Gets or Sets IsGift
         /// </summary>
-        [DataMember(Name = "isGift", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "isGift", IsRequired = false, EmitDefaultValue = true)]
         public bool IsGift { get; set; }
 
         /// <summary>
         /// Gets or Sets IsBulkGift
         /// </summary>
-        [DataMember(Name = "isBulkGift", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "isBulkGift", IsRequired = false, EmitDefaultValue = true)]
         public bool IsBulkGift { get; set; }
 
         /// <summary>

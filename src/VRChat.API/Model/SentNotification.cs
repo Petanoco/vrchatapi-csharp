@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public NotificationType Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="SentNotification" /> class.
@@ -59,31 +59,31 @@ namespace VRChat.API.Model
             // to ensure "details" is required (not null)
             if (details == null)
             {
-                throw new ArgumentNullException("details is a required property for SentNotification and cannot be null");
+                //throw new ArgumentNullException("details is a required property for SentNotification and cannot be null");
             }
             this.Details = details;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for SentNotification and cannot be null");
+                //throw new ArgumentNullException("id is a required property for SentNotification and cannot be null");
             }
             this.Id = id;
             // to ensure "message" is required (not null)
             if (message == null)
             {
-                throw new ArgumentNullException("message is a required property for SentNotification and cannot be null");
+                //throw new ArgumentNullException("message is a required property for SentNotification and cannot be null");
             }
             this.Message = message;
             // to ensure "receiverUserId" is required (not null)
             if (receiverUserId == null)
             {
-                throw new ArgumentNullException("receiverUserId is a required property for SentNotification and cannot be null");
+                //throw new ArgumentNullException("receiverUserId is a required property for SentNotification and cannot be null");
             }
             this.ReceiverUserId = receiverUserId;
             // to ensure "senderUserId" is required (not null)
             if (senderUserId == null)
             {
-                throw new ArgumentNullException("senderUserId is a required property for SentNotification and cannot be null");
+                //throw new ArgumentNullException("senderUserId is a required property for SentNotification and cannot be null");
             }
             this.SenderUserId = senderUserId;
             this.Type = type;
@@ -93,39 +93,39 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "created_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets Details
         /// </summary>
-        [DataMember(Name = "details", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "details", IsRequired = false, EmitDefaultValue = true)]
         public Object Details { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Message
         /// </summary>
-        [DataMember(Name = "message", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "message", IsRequired = false, EmitDefaultValue = true)]
         public string Message { get; set; }
 
         /// <summary>
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "receiverUserId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "receiverUserId", IsRequired = false, EmitDefaultValue = true)]
         public string ReceiverUserId { get; set; }
 
         /// <summary>
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "senderUserId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "senderUserId", IsRequired = false, EmitDefaultValue = true)]
         public string SenderUserId { get; set; }
 
         /// <summary>

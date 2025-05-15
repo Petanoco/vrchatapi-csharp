@@ -51,7 +51,7 @@ namespace VRChat.API.Model
         /// Status if a user exist with that username or userId.
         /// </summary>
         /// <value>Status if a user exist with that username or userId.</value>
-        [DataMember(Name = "userExists", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "userExists", IsRequired = false, EmitDefaultValue = true)]
         public bool _UserExists { get; set; }
 
         /// <summary>

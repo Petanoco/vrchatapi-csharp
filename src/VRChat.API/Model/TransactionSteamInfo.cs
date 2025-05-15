@@ -49,31 +49,31 @@ namespace VRChat.API.Model
             // to ensure "walletInfo" is required (not null)
             if (walletInfo == null)
             {
-                throw new ArgumentNullException("walletInfo is a required property for TransactionSteamInfo and cannot be null");
+                //throw new ArgumentNullException("walletInfo is a required property for TransactionSteamInfo and cannot be null");
             }
             this.WalletInfo = walletInfo;
             // to ensure "steamId" is required (not null)
             if (steamId == null)
             {
-                throw new ArgumentNullException("steamId is a required property for TransactionSteamInfo and cannot be null");
+                //throw new ArgumentNullException("steamId is a required property for TransactionSteamInfo and cannot be null");
             }
             this.SteamId = steamId;
             // to ensure "orderId" is required (not null)
             if (orderId == null)
             {
-                throw new ArgumentNullException("orderId is a required property for TransactionSteamInfo and cannot be null");
+                //throw new ArgumentNullException("orderId is a required property for TransactionSteamInfo and cannot be null");
             }
             this.OrderId = orderId;
             // to ensure "steamUrl" is required (not null)
             if (steamUrl == null)
             {
-                throw new ArgumentNullException("steamUrl is a required property for TransactionSteamInfo and cannot be null");
+                //throw new ArgumentNullException("steamUrl is a required property for TransactionSteamInfo and cannot be null");
             }
             this.SteamUrl = steamUrl;
             // to ensure "transId" is required (not null)
             if (transId == null)
             {
-                throw new ArgumentNullException("transId is a required property for TransactionSteamInfo and cannot be null");
+                //throw new ArgumentNullException("transId is a required property for TransactionSteamInfo and cannot be null");
             }
             this.TransId = transId;
         }
@@ -81,35 +81,35 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets WalletInfo
         /// </summary>
-        [DataMember(Name = "walletInfo", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "walletInfo", IsRequired = false, EmitDefaultValue = true)]
         public TransactionSteamWalletInfo WalletInfo { get; set; }
 
         /// <summary>
         /// Steam User ID
         /// </summary>
         /// <value>Steam User ID</value>
-        [DataMember(Name = "steamId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "steamId", IsRequired = false, EmitDefaultValue = true)]
         public string SteamId { get; set; }
 
         /// <summary>
         /// Steam Order ID
         /// </summary>
         /// <value>Steam Order ID</value>
-        [DataMember(Name = "orderId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "orderId", IsRequired = false, EmitDefaultValue = true)]
         public string OrderId { get; set; }
 
         /// <summary>
         /// Empty
         /// </summary>
         /// <value>Empty</value>
-        [DataMember(Name = "steamUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "steamUrl", IsRequired = false, EmitDefaultValue = true)]
         public string SteamUrl { get; set; }
 
         /// <summary>
         /// Steam Transaction ID, NOT the same as VRChat TransactionID
         /// </summary>
         /// <value>Steam Transaction ID, NOT the same as VRChat TransactionID</value>
-        [DataMember(Name = "transId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "transId", IsRequired = false, EmitDefaultValue = true)]
         public string TransId { get; set; }
 
         /// <summary>

@@ -48,7 +48,7 @@ namespace VRChat.API.Model
             // to ensure "title" is required (not null)
             if (title == null)
             {
-                throw new ArgumentNullException("title is a required property for CreateGroupAnnouncementRequest and cannot be null");
+                //throw new ArgumentNullException("title is a required property for CreateGroupAnnouncementRequest and cannot be null");
             }
             this.Title = title;
             this.Text = text;
@@ -60,7 +60,7 @@ namespace VRChat.API.Model
         /// Announcement title
         /// </summary>
         /// <value>Announcement title</value>
-        [DataMember(Name = "title", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "title", IsRequired = false, EmitDefaultValue = true)]
         public string Title { get; set; }
 
         /// <summary>

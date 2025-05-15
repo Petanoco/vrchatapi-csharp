@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Visibility
         /// </summary>
-        [DataMember(Name = "visibility", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "visibility", IsRequired = false, EmitDefaultValue = true)]
         public GroupPostVisibility Visibility { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateGroupPostRequest" /> class.
@@ -56,13 +56,13 @@ namespace VRChat.API.Model
             // to ensure "title" is required (not null)
             if (title == null)
             {
-                throw new ArgumentNullException("title is a required property for CreateGroupPostRequest and cannot be null");
+                //throw new ArgumentNullException("title is a required property for CreateGroupPostRequest and cannot be null");
             }
             this.Title = title;
             // to ensure "text" is required (not null)
             if (text == null)
             {
-                throw new ArgumentNullException("text is a required property for CreateGroupPostRequest and cannot be null");
+                //throw new ArgumentNullException("text is a required property for CreateGroupPostRequest and cannot be null");
             }
             this.Text = text;
             this.SendNotification = sendNotification;
@@ -75,14 +75,14 @@ namespace VRChat.API.Model
         /// Post title
         /// </summary>
         /// <value>Post title</value>
-        [DataMember(Name = "title", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "title", IsRequired = false, EmitDefaultValue = true)]
         public string Title { get; set; }
 
         /// <summary>
         /// Post text
         /// </summary>
         /// <value>Post text</value>
-        [DataMember(Name = "text", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "text", IsRequired = false, EmitDefaultValue = true)]
         public string Text { get; set; }
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace VRChat.API.Model
         /// Send notification to group members.
         /// </summary>
         /// <value>Send notification to group members.</value>
-        [DataMember(Name = "sendNotification", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sendNotification", IsRequired = false, EmitDefaultValue = true)]
         public bool SendNotification { get; set; }
 
         /// <summary>

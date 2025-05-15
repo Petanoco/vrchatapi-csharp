@@ -35,13 +35,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ListingType
         /// </summary>
-        [DataMember(Name = "listingType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "listingType", IsRequired = false, EmitDefaultValue = true)]
         public ProductListingType ListingType { get; set; }
 
         /// <summary>
         /// Gets or Sets ProductType
         /// </summary>
-        [DataMember(Name = "productType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "productType", IsRequired = false, EmitDefaultValue = true)]
         public ProductType ProductType { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductListing" /> class.
@@ -91,43 +91,43 @@ namespace VRChat.API.Model
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("description is a required property for ProductListing and cannot be null");
             }
             this.Description = description;
             // to ensure "displayName" is required (not null)
             if (displayName == null)
             {
-                throw new ArgumentNullException("displayName is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("displayName is a required property for ProductListing and cannot be null");
             }
             this.DisplayName = displayName;
             // to ensure "groupIcon" is required (not null)
             if (groupIcon == null)
             {
-                throw new ArgumentNullException("groupIcon is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("groupIcon is a required property for ProductListing and cannot be null");
             }
             this.GroupIcon = groupIcon;
             // to ensure "groupId" is required (not null)
             if (groupId == null)
             {
-                throw new ArgumentNullException("groupId is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("groupId is a required property for ProductListing and cannot be null");
             }
             this.GroupId = groupId;
             // to ensure "groupName" is required (not null)
             if (groupName == null)
             {
-                throw new ArgumentNullException("groupName is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("groupName is a required property for ProductListing and cannot be null");
             }
             this.GroupName = groupName;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("id is a required property for ProductListing and cannot be null");
             }
             this.Id = id;
             // to ensure "imageId" is required (not null)
             if (imageId == null)
             {
-                throw new ArgumentNullException("imageId is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("imageId is a required property for ProductListing and cannot be null");
             }
             this.ImageId = imageId;
             this.Instant = instant;
@@ -135,7 +135,7 @@ namespace VRChat.API.Model
             // to ensure "listingVariants" is required (not null)
             if (listingVariants == null)
             {
-                throw new ArgumentNullException("listingVariants is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("listingVariants is a required property for ProductListing and cannot be null");
             }
             this.ListingVariants = listingVariants;
             this.Permanent = permanent;
@@ -143,14 +143,14 @@ namespace VRChat.API.Model
             // to ensure "productIds" is required (not null)
             if (productIds == null)
             {
-                throw new ArgumentNullException("productIds is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("productIds is a required property for ProductListing and cannot be null");
             }
             this.ProductIds = productIds;
             this.ProductType = productType;
             // to ensure "products" is required (not null)
             if (products == null)
             {
-                throw new ArgumentNullException("products is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("products is a required property for ProductListing and cannot be null");
             }
             this.Products = products;
             this.Recurrable = recurrable;
@@ -158,32 +158,32 @@ namespace VRChat.API.Model
             // to ensure "sellerDisplayName" is required (not null)
             if (sellerDisplayName == null)
             {
-                throw new ArgumentNullException("sellerDisplayName is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("sellerDisplayName is a required property for ProductListing and cannot be null");
             }
             this.SellerDisplayName = sellerDisplayName;
             // to ensure "sellerId" is required (not null)
             if (sellerId == null)
             {
-                throw new ArgumentNullException("sellerId is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("sellerId is a required property for ProductListing and cannot be null");
             }
             this.SellerId = sellerId;
             this.Stackable = stackable;
             // to ensure "storeIds" is required (not null)
             if (storeIds == null)
             {
-                throw new ArgumentNullException("storeIds is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("storeIds is a required property for ProductListing and cannot be null");
             }
             this.StoreIds = storeIds;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for ProductListing and cannot be null");
             }
             this.Tags = tags;
             // to ensure "updated" is required (not null)
             if (updated == null)
             {
-                throw new ArgumentNullException("updated is a required property for ProductListing and cannot be null");
+                //throw new ArgumentNullException("updated is a required property for ProductListing and cannot be null");
             }
             this.Updated = updated;
             this.Duration = duration;
@@ -195,37 +195,37 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Active
         /// </summary>
-        [DataMember(Name = "active", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "active", IsRequired = false, EmitDefaultValue = true)]
         public bool Active { get; set; }
 
         /// <summary>
         /// Gets or Sets Archived
         /// </summary>
-        [DataMember(Name = "archived", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "archived", IsRequired = false, EmitDefaultValue = true)]
         public bool Archived { get; set; }
 
         /// <summary>
         /// Gets or Sets BuyerRefundable
         /// </summary>
-        [DataMember(Name = "buyerRefundable", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "buyerRefundable", IsRequired = false, EmitDefaultValue = true)]
         public bool BuyerRefundable { get; set; }
 
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
-        [DataMember(Name = "created", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created", IsRequired = false, EmitDefaultValue = true)]
         public DateTime Created { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets DisplayName
         /// </summary>
-        [DataMember(Name = "displayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "displayName", IsRequired = false, EmitDefaultValue = true)]
         public string DisplayName { get; set; }
 
         /// <summary>
@@ -243,19 +243,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets GroupIcon
         /// </summary>
-        [DataMember(Name = "groupIcon", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "groupIcon", IsRequired = false, EmitDefaultValue = true)]
         public string GroupIcon { get; set; }
 
         /// <summary>
         /// Gets or Sets GroupId
         /// </summary>
-        [DataMember(Name = "groupId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "groupId", IsRequired = false, EmitDefaultValue = true)]
         public string GroupId { get; set; }
 
         /// <summary>
         /// Gets or Sets GroupName
         /// </summary>
-        [DataMember(Name = "groupName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "groupName", IsRequired = false, EmitDefaultValue = true)]
         public string GroupName { get; set; }
 
         /// <summary>
@@ -267,49 +267,49 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageId
         /// </summary>
-        [DataMember(Name = "imageId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "imageId", IsRequired = false, EmitDefaultValue = true)]
         public string ImageId { get; set; }
 
         /// <summary>
         /// Gets or Sets Instant
         /// </summary>
-        [DataMember(Name = "instant", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "instant", IsRequired = false, EmitDefaultValue = true)]
         public bool Instant { get; set; }
 
         /// <summary>
         /// Gets or Sets ListingVariants
         /// </summary>
-        [DataMember(Name = "listingVariants", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "listingVariants", IsRequired = false, EmitDefaultValue = true)]
         public List<ProductListingVariant> ListingVariants { get; set; }
 
         /// <summary>
         /// Gets or Sets Permanent
         /// </summary>
-        [DataMember(Name = "permanent", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "permanent", IsRequired = false, EmitDefaultValue = true)]
         public bool Permanent { get; set; }
 
         /// <summary>
         /// Gets or Sets PriceTokens
         /// </summary>
-        [DataMember(Name = "priceTokens", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "priceTokens", IsRequired = false, EmitDefaultValue = true)]
         public int PriceTokens { get; set; }
 
         /// <summary>
         /// Gets or Sets ProductIds
         /// </summary>
-        [DataMember(Name = "productIds", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "productIds", IsRequired = false, EmitDefaultValue = true)]
         public List<string> ProductIds { get; set; }
 
         /// <summary>
         /// Gets or Sets Products
         /// </summary>
-        [DataMember(Name = "products", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "products", IsRequired = false, EmitDefaultValue = true)]
         public List<Object> Products { get; set; }
 
         /// <summary>
@@ -321,49 +321,49 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Recurrable
         /// </summary>
-        [DataMember(Name = "recurrable", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "recurrable", IsRequired = false, EmitDefaultValue = true)]
         public bool Recurrable { get; set; }
 
         /// <summary>
         /// Gets or Sets Refundable
         /// </summary>
-        [DataMember(Name = "refundable", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "refundable", IsRequired = false, EmitDefaultValue = true)]
         public bool Refundable { get; set; }
 
         /// <summary>
         /// Gets or Sets SellerDisplayName
         /// </summary>
-        [DataMember(Name = "sellerDisplayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sellerDisplayName", IsRequired = false, EmitDefaultValue = true)]
         public string SellerDisplayName { get; set; }
 
         /// <summary>
         /// Gets or Sets SellerId
         /// </summary>
-        [DataMember(Name = "sellerId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sellerId", IsRequired = false, EmitDefaultValue = true)]
         public string SellerId { get; set; }
 
         /// <summary>
         /// Gets or Sets Stackable
         /// </summary>
-        [DataMember(Name = "stackable", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "stackable", IsRequired = false, EmitDefaultValue = true)]
         public bool Stackable { get; set; }
 
         /// <summary>
         /// Gets or Sets StoreIds
         /// </summary>
-        [DataMember(Name = "storeIds", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "storeIds", IsRequired = false, EmitDefaultValue = true)]
         public List<string> StoreIds { get; set; }
 
         /// <summary>
         /// Gets or Sets Tags
         /// </summary>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         /// Gets or Sets Updated
         /// </summary>
-        [DataMember(Name = "updated", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updated", IsRequired = false, EmitDefaultValue = true)]
         public DateTime? Updated { get; set; }
 
         /// <summary>

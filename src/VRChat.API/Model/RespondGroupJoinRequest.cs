@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Action
         /// </summary>
-        [DataMember(Name = "action", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "action", IsRequired = false, EmitDefaultValue = true)]
         public GroupJoinRequestAction Action { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="RespondGroupJoinRequest" /> class.

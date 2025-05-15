@@ -45,7 +45,7 @@ namespace VRChat.API.Model
             // to ensure "fileId" is required (not null)
             if (fileId == null)
             {
-                throw new ArgumentNullException("fileId is a required property for AddGroupGalleryImageRequest and cannot be null");
+                //throw new ArgumentNullException("fileId is a required property for AddGroupGalleryImageRequest and cannot be null");
             }
             this.FileId = fileId;
         }
@@ -53,7 +53,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets FileId
         /// </summary>
-        [DataMember(Name = "fileId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "fileId", IsRequired = false, EmitDefaultValue = true)]
         public string FileId { get; set; }
 
         /// <summary>

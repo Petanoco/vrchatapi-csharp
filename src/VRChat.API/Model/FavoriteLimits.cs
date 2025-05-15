@@ -50,13 +50,13 @@ namespace VRChat.API.Model
             // to ensure "maxFavoriteGroups" is required (not null)
             if (maxFavoriteGroups == null)
             {
-                throw new ArgumentNullException("maxFavoriteGroups is a required property for FavoriteLimits and cannot be null");
+                //throw new ArgumentNullException("maxFavoriteGroups is a required property for FavoriteLimits and cannot be null");
             }
             this.MaxFavoriteGroups = maxFavoriteGroups;
             // to ensure "maxFavoritesPerGroup" is required (not null)
             if (maxFavoritesPerGroup == null)
             {
-                throw new ArgumentNullException("maxFavoritesPerGroup is a required property for FavoriteLimits and cannot be null");
+                //throw new ArgumentNullException("maxFavoritesPerGroup is a required property for FavoriteLimits and cannot be null");
             }
             this.MaxFavoritesPerGroup = maxFavoritesPerGroup;
         }
@@ -64,25 +64,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets DefaultMaxFavoriteGroups
         /// </summary>
-        [DataMember(Name = "defaultMaxFavoriteGroups", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "defaultMaxFavoriteGroups", IsRequired = false, EmitDefaultValue = true)]
         public int DefaultMaxFavoriteGroups { get; set; }
 
         /// <summary>
         /// Gets or Sets DefaultMaxFavoritesPerGroup
         /// </summary>
-        [DataMember(Name = "defaultMaxFavoritesPerGroup", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "defaultMaxFavoritesPerGroup", IsRequired = false, EmitDefaultValue = true)]
         public int DefaultMaxFavoritesPerGroup { get; set; }
 
         /// <summary>
         /// Gets or Sets MaxFavoriteGroups
         /// </summary>
-        [DataMember(Name = "maxFavoriteGroups", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "maxFavoriteGroups", IsRequired = false, EmitDefaultValue = true)]
         public FavoriteGroupLimits MaxFavoriteGroups { get; set; }
 
         /// <summary>
         /// Gets or Sets MaxFavoritesPerGroup
         /// </summary>
-        [DataMember(Name = "maxFavoritesPerGroup", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "maxFavoritesPerGroup", IsRequired = false, EmitDefaultValue = true)]
         public FavoriteGroupLimits MaxFavoritesPerGroup { get; set; }
 
         /// <summary>

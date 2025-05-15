@@ -52,19 +52,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets IncomingRequest
         /// </summary>
-        [DataMember(Name = "incomingRequest", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "incomingRequest", IsRequired = false, EmitDefaultValue = true)]
         public bool IncomingRequest { get; set; }
 
         /// <summary>
         /// Gets or Sets IsFriend
         /// </summary>
-        [DataMember(Name = "isFriend", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "isFriend", IsRequired = false, EmitDefaultValue = true)]
         public bool IsFriend { get; set; }
 
         /// <summary>
         /// Gets or Sets OutgoingRequest
         /// </summary>
-        [DataMember(Name = "outgoingRequest", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "outgoingRequest", IsRequired = false, EmitDefaultValue = true)]
         public bool OutgoingRequest { get; set; }
 
         /// <summary>

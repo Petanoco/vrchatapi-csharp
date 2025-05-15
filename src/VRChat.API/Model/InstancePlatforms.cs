@@ -52,7 +52,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Android
         /// </summary>
-        [DataMember(Name = "android", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "android", IsRequired = false, EmitDefaultValue = true)]
         public int Android { get; set; }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Standalonewindows
         /// </summary>
-        [DataMember(Name = "standalonewindows", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "standalonewindows", IsRequired = false, EmitDefaultValue = true)]
         public int Standalonewindows { get; set; }
 
         /// <summary>

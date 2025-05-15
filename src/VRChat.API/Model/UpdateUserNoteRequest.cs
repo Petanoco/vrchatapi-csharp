@@ -46,13 +46,13 @@ namespace VRChat.API.Model
             // to ensure "targetUserId" is required (not null)
             if (targetUserId == null)
             {
-                throw new ArgumentNullException("targetUserId is a required property for UpdateUserNoteRequest and cannot be null");
+                //throw new ArgumentNullException("targetUserId is a required property for UpdateUserNoteRequest and cannot be null");
             }
             this.TargetUserId = targetUserId;
             // to ensure "note" is required (not null)
             if (note == null)
             {
-                throw new ArgumentNullException("note is a required property for UpdateUserNoteRequest and cannot be null");
+                //throw new ArgumentNullException("note is a required property for UpdateUserNoteRequest and cannot be null");
             }
             this.Note = note;
         }
@@ -61,13 +61,13 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "targetUserId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "targetUserId", IsRequired = false, EmitDefaultValue = true)]
         public string TargetUserId { get; set; }
 
         /// <summary>
         /// Gets or Sets Note
         /// </summary>
-        [DataMember(Name = "note", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "note", IsRequired = false, EmitDefaultValue = true)]
         public string Note { get; set; }
 
         /// <summary>

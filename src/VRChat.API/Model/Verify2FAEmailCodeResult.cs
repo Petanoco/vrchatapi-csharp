@@ -48,7 +48,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Verified
         /// </summary>
-        [DataMember(Name = "verified", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "verified", IsRequired = false, EmitDefaultValue = true)]
         public bool Verified { get; set; }
 
         /// <summary>

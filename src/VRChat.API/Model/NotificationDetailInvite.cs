@@ -47,13 +47,13 @@ namespace VRChat.API.Model
             // to ensure "worldId" is required (not null)
             if (worldId == null)
             {
-                throw new ArgumentNullException("worldId is a required property for NotificationDetailInvite and cannot be null");
+                //throw new ArgumentNullException("worldId is a required property for NotificationDetailInvite and cannot be null");
             }
             this.WorldId = worldId;
             // to ensure "worldName" is required (not null)
             if (worldName == null)
             {
-                throw new ArgumentNullException("worldName is a required property for NotificationDetailInvite and cannot be null");
+                //throw new ArgumentNullException("worldName is a required property for NotificationDetailInvite and cannot be null");
             }
             this.WorldName = worldName;
             this.InviteMessage = inviteMessage;
@@ -69,13 +69,13 @@ namespace VRChat.API.Model
         /// WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.
         /// </summary>
         /// <value>WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.</value>
-        [DataMember(Name = "worldId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldId", IsRequired = false, EmitDefaultValue = true)]
         public string WorldId { get; set; }
 
         /// <summary>
         /// Gets or Sets WorldName
         /// </summary>
-        [DataMember(Name = "worldName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldName", IsRequired = false, EmitDefaultValue = true)]
         public string WorldName { get; set; }
 
         /// <summary>

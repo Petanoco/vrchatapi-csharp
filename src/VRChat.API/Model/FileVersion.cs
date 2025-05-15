@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Status
         /// </summary>
-        [DataMember(Name = "status", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status", IsRequired = false, EmitDefaultValue = true)]
         public FileStatus Status { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="FileVersion" /> class.
@@ -66,7 +66,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "created_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
@@ -98,7 +98,7 @@ namespace VRChat.API.Model
         /// Incremental version counter, can only be increased.
         /// </summary>
         /// <value>Incremental version counter, can only be increased.</value>
-        [DataMember(Name = "version", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "version", IsRequired = false, EmitDefaultValue = true)]
         public int _Version { get; set; }
 
         /// <summary>

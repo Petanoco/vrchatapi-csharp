@@ -45,7 +45,7 @@ namespace VRChat.API.Model
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for ChangeUserTagsRequest and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for ChangeUserTagsRequest and cannot be null");
             }
             this.Tags = tags;
         }
@@ -54,7 +54,7 @@ namespace VRChat.API.Model
         /// The tags being added or removed.
         /// </summary>
         /// <value>The tags being added or removed.</value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>

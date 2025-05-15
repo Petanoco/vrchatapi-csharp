@@ -57,61 +57,61 @@ namespace VRChat.API.Model
             // to ensure "avatar" is required (not null)
             if (avatar == null)
             {
-                throw new ArgumentNullException("avatar is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("avatar is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Avatar = avatar;
             // to ensure "behavior" is required (not null)
             if (behavior == null)
             {
-                throw new ArgumentNullException("behavior is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("behavior is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Behavior = behavior;
             // to ensure "chat" is required (not null)
             if (chat == null)
             {
-                throw new ArgumentNullException("chat is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("chat is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Chat = chat;
             // to ensure "environment" is required (not null)
             if (environment == null)
             {
-                throw new ArgumentNullException("environment is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("environment is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Environment = environment;
             // to ensure "groupstore" is required (not null)
             if (groupstore == null)
             {
-                throw new ArgumentNullException("groupstore is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("groupstore is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Groupstore = groupstore;
             // to ensure "image" is required (not null)
             if (image == null)
             {
-                throw new ArgumentNullException("image is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("image is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Image = image;
             // to ensure "text" is required (not null)
             if (text == null)
             {
-                throw new ArgumentNullException("text is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("text is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Text = text;
             // to ensure "warnings" is required (not null)
             if (warnings == null)
             {
-                throw new ArgumentNullException("warnings is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("warnings is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Warnings = warnings;
             // to ensure "worldimage" is required (not null)
             if (worldimage == null)
             {
-                throw new ArgumentNullException("worldimage is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("worldimage is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Worldimage = worldimage;
             // to ensure "worldstore" is required (not null)
             if (worldstore == null)
             {
-                throw new ArgumentNullException("worldstore is a required property for APIConfigReportCategories and cannot be null");
+                //throw new ArgumentNullException("worldstore is a required property for APIConfigReportCategories and cannot be null");
             }
             this.Worldstore = worldstore;
             this.Avatarpage = avatarpage;
@@ -122,7 +122,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Avatar
         /// </summary>
-        [DataMember(Name = "avatar", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "avatar", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Avatar { get; set; }
 
         /// <summary>
@@ -134,13 +134,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Behavior
         /// </summary>
-        [DataMember(Name = "behavior", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "behavior", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Behavior { get; set; }
 
         /// <summary>
         /// Gets or Sets Chat
         /// </summary>
-        [DataMember(Name = "chat", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "chat", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Chat { get; set; }
 
         /// <summary>
@@ -152,25 +152,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Environment
         /// </summary>
-        [DataMember(Name = "environment", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "environment", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Environment { get; set; }
 
         /// <summary>
         /// Gets or Sets Groupstore
         /// </summary>
-        [DataMember(Name = "groupstore", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "groupstore", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Groupstore { get; set; }
 
         /// <summary>
         /// Gets or Sets Image
         /// </summary>
-        [DataMember(Name = "image", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "image", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Image { get; set; }
 
         /// <summary>
         /// Gets or Sets Text
         /// </summary>
-        [DataMember(Name = "text", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "text", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Text { get; set; }
 
         /// <summary>
@@ -182,19 +182,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Warnings
         /// </summary>
-        [DataMember(Name = "warnings", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "warnings", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Warnings { get; set; }
 
         /// <summary>
         /// Gets or Sets Worldimage
         /// </summary>
-        [DataMember(Name = "worldimage", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldimage", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Worldimage { get; set; }
 
         /// <summary>
         /// Gets or Sets Worldstore
         /// </summary>
-        [DataMember(Name = "worldstore", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldstore", IsRequired = false, EmitDefaultValue = true)]
         public ReportCategory Worldstore { get; set; }
 
         /// <summary>

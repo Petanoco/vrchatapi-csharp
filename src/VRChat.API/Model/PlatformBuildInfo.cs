@@ -51,7 +51,7 @@ namespace VRChat.API.Model
         /// Minimum build number required for the platform
         /// </summary>
         /// <value>Minimum build number required for the platform</value>
-        [DataMember(Name = "minBuildNumber", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "minBuildNumber", IsRequired = false, EmitDefaultValue = true)]
         public int MinBuildNumber { get; set; }
 
         /// <summary>

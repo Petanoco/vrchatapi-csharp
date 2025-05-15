@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ProductType
         /// </summary>
-        [DataMember(Name = "productType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "productType", IsRequired = false, EmitDefaultValue = true)]
         public ProductType ProductType { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Product" /> class.
@@ -69,56 +69,56 @@ namespace VRChat.API.Model
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("description is a required property for Product and cannot be null");
             }
             this.Description = description;
             // to ensure "displayName" is required (not null)
             if (displayName == null)
             {
-                throw new ArgumentNullException("displayName is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("displayName is a required property for Product and cannot be null");
             }
             this.DisplayName = displayName;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Product and cannot be null");
             }
             this.Id = id;
             // to ensure "imageId" is required (not null)
             if (imageId == null)
             {
-                throw new ArgumentNullException("imageId is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("imageId is a required property for Product and cannot be null");
             }
             this.ImageId = imageId;
             // to ensure "parentListings" is required (not null)
             if (parentListings == null)
             {
-                throw new ArgumentNullException("parentListings is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("parentListings is a required property for Product and cannot be null");
             }
             this.ParentListings = parentListings;
             this.ProductType = productType;
             // to ensure "sellerDisplayName" is required (not null)
             if (sellerDisplayName == null)
             {
-                throw new ArgumentNullException("sellerDisplayName is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("sellerDisplayName is a required property for Product and cannot be null");
             }
             this.SellerDisplayName = sellerDisplayName;
             // to ensure "sellerId" is required (not null)
             if (sellerId == null)
             {
-                throw new ArgumentNullException("sellerId is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("sellerId is a required property for Product and cannot be null");
             }
             this.SellerId = sellerId;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for Product and cannot be null");
             }
             this.Tags = tags;
             // to ensure "updated" is required (not null)
             if (updated == null)
             {
-                throw new ArgumentNullException("updated is a required property for Product and cannot be null");
+                //throw new ArgumentNullException("updated is a required property for Product and cannot be null");
             }
             this.Updated = updated;
             this.GroupAccess = groupAccess;
@@ -131,25 +131,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Archived
         /// </summary>
-        [DataMember(Name = "archived", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "archived", IsRequired = false, EmitDefaultValue = true)]
         public bool Archived { get; set; }
 
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
-        [DataMember(Name = "created", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created", IsRequired = false, EmitDefaultValue = true)]
         public DateTime Created { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets DisplayName
         /// </summary>
-        [DataMember(Name = "displayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "displayName", IsRequired = false, EmitDefaultValue = true)]
         public string DisplayName { get; set; }
 
         /// <summary>
@@ -179,43 +179,43 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets ImageId
         /// </summary>
-        [DataMember(Name = "imageId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "imageId", IsRequired = false, EmitDefaultValue = true)]
         public string ImageId { get; set; }
 
         /// <summary>
         /// Gets or Sets ParentListings
         /// </summary>
-        [DataMember(Name = "parentListings", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "parentListings", IsRequired = false, EmitDefaultValue = true)]
         public List<string> ParentListings { get; set; }
 
         /// <summary>
         /// Gets or Sets SellerDisplayName
         /// </summary>
-        [DataMember(Name = "sellerDisplayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sellerDisplayName", IsRequired = false, EmitDefaultValue = true)]
         public string SellerDisplayName { get; set; }
 
         /// <summary>
         /// Gets or Sets SellerId
         /// </summary>
-        [DataMember(Name = "sellerId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sellerId", IsRequired = false, EmitDefaultValue = true)]
         public string SellerId { get; set; }
 
         /// <summary>
         /// Gets or Sets Tags
         /// </summary>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         /// Gets or Sets Updated
         /// </summary>
-        [DataMember(Name = "updated", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updated", IsRequired = false, EmitDefaultValue = true)]
         public DateTime? Updated { get; set; }
 
         /// <summary>

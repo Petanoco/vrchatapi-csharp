@@ -67,7 +67,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Command
         /// </summary>
-        [DataMember(Name = "command", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "command", IsRequired = false, EmitDefaultValue = true)]
         public CommandEnum Command { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="InfoPushDataClickable" /> class.

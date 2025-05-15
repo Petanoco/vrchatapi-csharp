@@ -51,32 +51,32 @@ namespace VRChat.API.Model
             // to ensure "contentId" is required (not null)
             if (contentId == null)
             {
-                throw new ArgumentNullException("contentId is a required property for Submission and cannot be null");
+                //throw new ArgumentNullException("contentId is a required property for Submission and cannot be null");
             }
             this.ContentId = contentId;
             this.CreatedAt = createdAt;
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for Submission and cannot be null");
+                //throw new ArgumentNullException("description is a required property for Submission and cannot be null");
             }
             this.Description = description;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Submission and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Submission and cannot be null");
             }
             this.Id = id;
             // to ensure "jamId" is required (not null)
             if (jamId == null)
             {
-                throw new ArgumentNullException("jamId is a required property for Submission and cannot be null");
+                //throw new ArgumentNullException("jamId is a required property for Submission and cannot be null");
             }
             this.JamId = jamId;
             // to ensure "submitterId" is required (not null)
             if (submitterId == null)
             {
-                throw new ArgumentNullException("submitterId is a required property for Submission and cannot be null");
+                //throw new ArgumentNullException("submitterId is a required property for Submission and cannot be null");
             }
             this.SubmitterId = submitterId;
             this.RatingScore = ratingScore;
@@ -86,31 +86,31 @@ namespace VRChat.API.Model
         /// Either world ID or avatar ID
         /// </summary>
         /// <value>Either world ID or avatar ID</value>
-        [DataMember(Name = "contentId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "contentId", IsRequired = false, EmitDefaultValue = true)]
         public string ContentId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "created_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets JamId
         /// </summary>
-        [DataMember(Name = "jamId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "jamId", IsRequired = false, EmitDefaultValue = true)]
         public string JamId { get; set; }
 
         /// <summary>
@@ -123,7 +123,7 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "submitterId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "submitterId", IsRequired = false, EmitDefaultValue = true)]
         public string SubmitterId { get; set; }
 
         /// <summary>

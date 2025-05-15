@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets MessageType
         /// </summary>
-        [DataMember(Name = "messageType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "messageType", IsRequired = false, EmitDefaultValue = true)]
         public InviteMessageType MessageType { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="InviteMessage" /> class.
@@ -58,13 +58,13 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for InviteMessage and cannot be null");
+                //throw new ArgumentNullException("id is a required property for InviteMessage and cannot be null");
             }
             this.Id = id;
             // to ensure "message" is required (not null)
             if (message == null)
             {
-                throw new ArgumentNullException("message is a required property for InviteMessage and cannot be null");
+                //throw new ArgumentNullException("message is a required property for InviteMessage and cannot be null");
             }
             this.Message = message;
             this.MessageType = messageType;
@@ -76,38 +76,38 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets CanBeUpdated
         /// </summary>
-        [DataMember(Name = "canBeUpdated", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "canBeUpdated", IsRequired = false, EmitDefaultValue = true)]
         public bool CanBeUpdated { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Message
         /// </summary>
-        [DataMember(Name = "message", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "message", IsRequired = false, EmitDefaultValue = true)]
         public string Message { get; set; }
 
         /// <summary>
         /// Changes to 60 when updated, although probably server-side configurable.
         /// </summary>
         /// <value>Changes to 60 when updated, although probably server-side configurable.</value>
-        [DataMember(Name = "remainingCooldownMinutes", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "remainingCooldownMinutes", IsRequired = false, EmitDefaultValue = true)]
         public int RemainingCooldownMinutes { get; set; }
 
         /// <summary>
         /// Gets or Sets Slot
         /// </summary>
-        [DataMember(Name = "slot", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "slot", IsRequired = false, EmitDefaultValue = true)]
         public int Slot { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
-        [DataMember(Name = "updatedAt", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updatedAt", IsRequired = false, EmitDefaultValue = true)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>

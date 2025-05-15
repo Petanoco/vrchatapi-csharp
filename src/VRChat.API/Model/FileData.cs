@@ -61,13 +61,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Category
         /// </summary>
-        [DataMember(Name = "category", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "category", IsRequired = false, EmitDefaultValue = true)]
         public CategoryEnum Category { get; set; }
 
         /// <summary>
         /// Gets or Sets Status
         /// </summary>
-        [DataMember(Name = "status", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status", IsRequired = false, EmitDefaultValue = true)]
         public FileStatus Status { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="FileData" /> class.
@@ -90,7 +90,7 @@ namespace VRChat.API.Model
             // to ensure "fileName" is required (not null)
             if (fileName == null)
             {
-                throw new ArgumentNullException("fileName is a required property for FileData and cannot be null");
+                //throw new ArgumentNullException("fileName is a required property for FileData and cannot be null");
             }
             this.FileName = fileName;
             this.SizeInBytes = sizeInBytes;
@@ -98,13 +98,13 @@ namespace VRChat.API.Model
             // to ensure "uploadId" is required (not null)
             if (uploadId == null)
             {
-                throw new ArgumentNullException("uploadId is a required property for FileData and cannot be null");
+                //throw new ArgumentNullException("uploadId is a required property for FileData and cannot be null");
             }
             this.UploadId = uploadId;
             // to ensure "url" is required (not null)
             if (url == null)
             {
-                throw new ArgumentNullException("url is a required property for FileData and cannot be null");
+                //throw new ArgumentNullException("url is a required property for FileData and cannot be null");
             }
             this.Url = url;
             this.Md5 = md5;
@@ -113,7 +113,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets FileName
         /// </summary>
-        [DataMember(Name = "fileName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "fileName", IsRequired = false, EmitDefaultValue = true)]
         public string FileName { get; set; }
 
         /// <summary>
@@ -125,19 +125,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets SizeInBytes
         /// </summary>
-        [DataMember(Name = "sizeInBytes", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sizeInBytes", IsRequired = false, EmitDefaultValue = true)]
         public int SizeInBytes { get; set; }
 
         /// <summary>
         /// Gets or Sets UploadId
         /// </summary>
-        [DataMember(Name = "uploadId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "uploadId", IsRequired = false, EmitDefaultValue = true)]
         public string UploadId { get; set; }
 
         /// <summary>
         /// Gets or Sets Url
         /// </summary>
-        [DataMember(Name = "url", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "url", IsRequired = false, EmitDefaultValue = true)]
         public string Url { get; set; }
 
         /// <summary>

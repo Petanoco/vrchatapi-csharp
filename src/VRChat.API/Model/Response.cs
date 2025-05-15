@@ -56,7 +56,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets StatusCode
         /// </summary>
-        [DataMember(Name = "status_code", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status_code", IsRequired = false, EmitDefaultValue = true)]
         public int StatusCode { get; set; }
 
         /// <summary>

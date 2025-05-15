@@ -52,7 +52,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets _Balance
         /// </summary>
-        [DataMember(Name = "balance", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "balance", IsRequired = false, EmitDefaultValue = true)]
         public int _Balance { get; set; }
 
         /// <summary>

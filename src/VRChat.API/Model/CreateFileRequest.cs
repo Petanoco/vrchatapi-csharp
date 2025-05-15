@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets MimeType
         /// </summary>
-        [DataMember(Name = "mimeType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "mimeType", IsRequired = false, EmitDefaultValue = true)]
         public MIMEType MimeType { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateFileRequest" /> class.
@@ -54,14 +54,14 @@ namespace VRChat.API.Model
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for CreateFileRequest and cannot be null");
+                //throw new ArgumentNullException("name is a required property for CreateFileRequest and cannot be null");
             }
             this.Name = name;
             this.MimeType = mimeType;
             // to ensure "extension" is required (not null)
             if (extension == null)
             {
-                throw new ArgumentNullException("extension is a required property for CreateFileRequest and cannot be null");
+                //throw new ArgumentNullException("extension is a required property for CreateFileRequest and cannot be null");
             }
             this.Extension = extension;
             this.Tags = tags;
@@ -70,13 +70,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets Extension
         /// </summary>
-        [DataMember(Name = "extension", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "extension", IsRequired = false, EmitDefaultValue = true)]
         public string Extension { get; set; }
 
         /// <summary>

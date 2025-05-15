@@ -66,20 +66,20 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for UnityPackage and cannot be null");
+                //throw new ArgumentNullException("id is a required property for UnityPackage and cannot be null");
             }
             this.Id = id;
             this.AssetVersion = assetVersion;
             // to ensure "platform" is required (not null)
             if (platform == null)
             {
-                throw new ArgumentNullException("platform is a required property for UnityPackage and cannot be null");
+                //throw new ArgumentNullException("platform is a required property for UnityPackage and cannot be null");
             }
             this.Platform = platform;
             // to ensure "unityVersion" is required (not null)
             if (unityVersion == null)
             {
-                throw new ArgumentNullException("unityVersion is a required property for UnityPackage and cannot be null");
+                //throw new ArgumentNullException("unityVersion is a required property for UnityPackage and cannot be null");
             }
             this.UnityVersion = unityVersion;
             this.AssetUrl = assetUrl;
@@ -99,7 +99,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
@@ -117,7 +117,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets AssetVersion
         /// </summary>
-        [DataMember(Name = "assetVersion", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "assetVersion", IsRequired = false, EmitDefaultValue = true)]
         public int AssetVersion { get; set; }
 
         /// <summary>
@@ -136,7 +136,7 @@ namespace VRChat.API.Model
         /// This can be &#x60;standalonewindows&#x60; or &#x60;android&#x60;, but can also pretty much be any random Unity verison such as &#x60;2019.2.4-801-Release&#x60; or &#x60;2019.2.2-772-Release&#x60; or even &#x60;unknownplatform&#x60;.
         /// </summary>
         /// <value>This can be &#x60;standalonewindows&#x60; or &#x60;android&#x60;, but can also pretty much be any random Unity verison such as &#x60;2019.2.4-801-Release&#x60; or &#x60;2019.2.2-772-Release&#x60; or even &#x60;unknownplatform&#x60;.</value>
-        [DataMember(Name = "platform", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "platform", IsRequired = false, EmitDefaultValue = true)]
         public string Platform { get; set; }
 
         /// <summary>
@@ -160,7 +160,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets UnityVersion
         /// </summary>
-        [DataMember(Name = "unityVersion", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "unityVersion", IsRequired = false, EmitDefaultValue = true)]
         public string UnityVersion { get; set; }
 
         /// <summary>

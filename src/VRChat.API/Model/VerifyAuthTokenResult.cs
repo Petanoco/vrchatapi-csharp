@@ -47,7 +47,7 @@ namespace VRChat.API.Model
             // to ensure "token" is required (not null)
             if (token == null)
             {
-                throw new ArgumentNullException("token is a required property for VerifyAuthTokenResult and cannot be null");
+                //throw new ArgumentNullException("token is a required property for VerifyAuthTokenResult and cannot be null");
             }
             this.Token = token;
         }
@@ -55,13 +55,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Ok
         /// </summary>
-        [DataMember(Name = "ok", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "ok", IsRequired = false, EmitDefaultValue = true)]
         public bool Ok { get; set; }
 
         /// <summary>
         /// Gets or Sets Token
         /// </summary>
-        [DataMember(Name = "token", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "token", IsRequired = false, EmitDefaultValue = true)]
         public string Token { get; set; }
 
         /// <summary>

@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets MimeType
         /// </summary>
-        [DataMember(Name = "mimeType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "mimeType", IsRequired = false, EmitDefaultValue = true)]
         public MIMEType MimeType { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="File" /> class.
@@ -57,38 +57,38 @@ namespace VRChat.API.Model
             // to ensure "extension" is required (not null)
             if (extension == null)
             {
-                throw new ArgumentNullException("extension is a required property for File and cannot be null");
+                //throw new ArgumentNullException("extension is a required property for File and cannot be null");
             }
             this.Extension = extension;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for File and cannot be null");
+                //throw new ArgumentNullException("id is a required property for File and cannot be null");
             }
             this.Id = id;
             this.MimeType = mimeType;
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for File and cannot be null");
+                //throw new ArgumentNullException("name is a required property for File and cannot be null");
             }
             this.Name = name;
             // to ensure "ownerId" is required (not null)
             if (ownerId == null)
             {
-                throw new ArgumentNullException("ownerId is a required property for File and cannot be null");
+                //throw new ArgumentNullException("ownerId is a required property for File and cannot be null");
             }
             this.OwnerId = ownerId;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for File and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for File and cannot be null");
             }
             this.Tags = tags;
             // to ensure "versions" is required (not null)
             if (versions == null)
             {
-                throw new ArgumentNullException("versions is a required property for File and cannot be null");
+                //throw new ArgumentNullException("versions is a required property for File and cannot be null");
             }
             this.Versions = versions;
         }
@@ -96,40 +96,40 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Extension
         /// </summary>
-        [DataMember(Name = "extension", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "extension", IsRequired = false, EmitDefaultValue = true)]
         public string Extension { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "ownerId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "ownerId", IsRequired = false, EmitDefaultValue = true)]
         public string OwnerId { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "versions", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "versions", IsRequired = false, EmitDefaultValue = true)]
         public List<FileVersion> Versions { get; set; }
 
         /// <summary>

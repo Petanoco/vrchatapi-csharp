@@ -49,7 +49,7 @@ namespace VRChat.API.Model
         /// Maximum amount of seats. -1 means no limit.
         /// </summary>
         /// <value>Maximum amount of seats. -1 means no limit.</value>
-        [DataMember(Name = "maxSeats", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "maxSeats", IsRequired = false, EmitDefaultValue = true)]
         public int MaxSeats { get; set; }
 
         /// <summary>

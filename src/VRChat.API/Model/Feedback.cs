@@ -57,67 +57,67 @@ namespace VRChat.API.Model
             // to ensure "commenterId" is required (not null)
             if (commenterId == null)
             {
-                throw new ArgumentNullException("commenterId is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("commenterId is a required property for Feedback and cannot be null");
             }
             this.CommenterId = commenterId;
             // to ensure "commenterName" is required (not null)
             if (commenterName == null)
             {
-                throw new ArgumentNullException("commenterName is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("commenterName is a required property for Feedback and cannot be null");
             }
             this.CommenterName = commenterName;
             // to ensure "contentAuthorId" is required (not null)
             if (contentAuthorId == null)
             {
-                throw new ArgumentNullException("contentAuthorId is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("contentAuthorId is a required property for Feedback and cannot be null");
             }
             this.ContentAuthorId = contentAuthorId;
             // to ensure "contentAuthorName" is required (not null)
             if (contentAuthorName == null)
             {
-                throw new ArgumentNullException("contentAuthorName is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("contentAuthorName is a required property for Feedback and cannot be null");
             }
             this.ContentAuthorName = contentAuthorName;
             // to ensure "contentId" is required (not null)
             if (contentId == null)
             {
-                throw new ArgumentNullException("contentId is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("contentId is a required property for Feedback and cannot be null");
             }
             this.ContentId = contentId;
             // to ensure "contentType" is required (not null)
             if (contentType == null)
             {
-                throw new ArgumentNullException("contentType is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("contentType is a required property for Feedback and cannot be null");
             }
             this.ContentType = contentType;
             // to ensure "contentVersion" is required (not null)
             if (contentVersion == null)
             {
-                throw new ArgumentNullException("contentVersion is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("contentVersion is a required property for Feedback and cannot be null");
             }
             this.ContentVersion = contentVersion;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Feedback and cannot be null");
             }
             this.Id = id;
             // to ensure "reason" is required (not null)
             if (reason == null)
             {
-                throw new ArgumentNullException("reason is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("reason is a required property for Feedback and cannot be null");
             }
             this.Reason = reason;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for Feedback and cannot be null");
             }
             this.Tags = tags;
             // to ensure "type" is required (not null)
             if (type == null)
             {
-                throw new ArgumentNullException("type is a required property for Feedback and cannot be null");
+                //throw new ArgumentNullException("type is a required property for Feedback and cannot be null");
             }
             this.Type = type;
             this.ContentName = contentName;
@@ -128,32 +128,32 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "commenterId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "commenterId", IsRequired = false, EmitDefaultValue = true)]
         public string CommenterId { get; set; }
 
         /// <summary>
         /// Gets or Sets CommenterName
         /// </summary>
-        [DataMember(Name = "commenterName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "commenterName", IsRequired = false, EmitDefaultValue = true)]
         public string CommenterName { get; set; }
 
         /// <summary>
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "contentAuthorId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "contentAuthorId", IsRequired = false, EmitDefaultValue = true)]
         public string ContentAuthorId { get; set; }
 
         /// <summary>
         /// Gets or Sets ContentAuthorName
         /// </summary>
-        [DataMember(Name = "contentAuthorName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "contentAuthorName", IsRequired = false, EmitDefaultValue = true)]
         public string ContentAuthorName { get; set; }
 
         /// <summary>
         /// Gets or Sets ContentId
         /// </summary>
-        [DataMember(Name = "contentId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "contentId", IsRequired = false, EmitDefaultValue = true)]
         public string ContentId { get; set; }
 
         /// <summary>
@@ -165,13 +165,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ContentType
         /// </summary>
-        [DataMember(Name = "contentType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "contentType", IsRequired = false, EmitDefaultValue = true)]
         public string ContentType { get; set; }
 
         /// <summary>
         /// Gets or Sets ContentVersion
         /// </summary>
-        [DataMember(Name = "contentVersion", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "contentVersion", IsRequired = false, EmitDefaultValue = true)]
         public int? ContentVersion { get; set; }
 
         /// <summary>
@@ -183,25 +183,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Reason
         /// </summary>
-        [DataMember(Name = "reason", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "reason", IsRequired = false, EmitDefaultValue = true)]
         public string Reason { get; set; }
 
         /// <summary>
         /// Gets or Sets Tags
         /// </summary>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public string Type { get; set; }
 
         /// <summary>

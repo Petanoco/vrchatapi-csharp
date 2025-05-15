@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public PlayerModerationType Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="ModerateUserRequest" /> class.
@@ -52,7 +52,7 @@ namespace VRChat.API.Model
             // to ensure "moderated" is required (not null)
             if (moderated == null)
             {
-                throw new ArgumentNullException("moderated is a required property for ModerateUserRequest and cannot be null");
+                //throw new ArgumentNullException("moderated is a required property for ModerateUserRequest and cannot be null");
             }
             this.Moderated = moderated;
             this.Type = type;
@@ -62,7 +62,7 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "moderated", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "moderated", IsRequired = false, EmitDefaultValue = true)]
         public string Moderated { get; set; }
 
         /// <summary>

@@ -48,7 +48,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets EstimatedServiceDurationSeconds
         /// </summary>
-        [DataMember(Name = "estimatedServiceDurationSeconds", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "estimatedServiceDurationSeconds", IsRequired = false, EmitDefaultValue = true)]
         public int EstimatedServiceDurationSeconds { get; set; }
 
         /// <summary>

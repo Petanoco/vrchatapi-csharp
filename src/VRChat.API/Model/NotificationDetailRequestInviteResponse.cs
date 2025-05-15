@@ -46,7 +46,7 @@ namespace VRChat.API.Model
             // to ensure "inResponseTo" is required (not null)
             if (inResponseTo == null)
             {
-                throw new ArgumentNullException("inResponseTo is a required property for NotificationDetailRequestInviteResponse and cannot be null");
+                //throw new ArgumentNullException("inResponseTo is a required property for NotificationDetailRequestInviteResponse and cannot be null");
             }
             this.InResponseTo = inResponseTo;
             this.RequestMessage = requestMessage;
@@ -55,7 +55,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets InResponseTo
         /// </summary>
-        [DataMember(Name = "inResponseTo", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "inResponseTo", IsRequired = false, EmitDefaultValue = true)]
         public string InResponseTo { get; set; }
 
         /// <summary>

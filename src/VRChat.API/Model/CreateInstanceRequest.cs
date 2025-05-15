@@ -35,13 +35,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public InstanceType Type { get; set; }
 
         /// <summary>
         /// Gets or Sets Region
         /// </summary>
-        [DataMember(Name = "region", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "region", IsRequired = false, EmitDefaultValue = true)]
         public InstanceRegion Region { get; set; }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace VRChat.API.Model
             // to ensure "worldId" is required (not null)
             if (worldId == null)
             {
-                throw new ArgumentNullException("worldId is a required property for CreateInstanceRequest and cannot be null");
+                //throw new ArgumentNullException("worldId is a required property for CreateInstanceRequest and cannot be null");
             }
             this.WorldId = worldId;
             this.Type = type;
@@ -92,7 +92,7 @@ namespace VRChat.API.Model
         /// WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.
         /// </summary>
         /// <value>WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.</value>
-        [DataMember(Name = "worldId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldId", IsRequired = false, EmitDefaultValue = true)]
         public string WorldId { get; set; }
 
         /// <summary>

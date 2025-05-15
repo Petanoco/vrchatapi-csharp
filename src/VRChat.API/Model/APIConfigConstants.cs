@@ -47,19 +47,19 @@ namespace VRChat.API.Model
             // to ensure "gROUPS" is required (not null)
             if (gROUPS == null)
             {
-                throw new ArgumentNullException("gROUPS is a required property for APIConfigConstants and cannot be null");
+                //throw new ArgumentNullException("gROUPS is a required property for APIConfigConstants and cannot be null");
             }
             this.GROUPS = gROUPS;
             // to ensure "iNSTANCE" is required (not null)
             if (iNSTANCE == null)
             {
-                throw new ArgumentNullException("iNSTANCE is a required property for APIConfigConstants and cannot be null");
+                //throw new ArgumentNullException("iNSTANCE is a required property for APIConfigConstants and cannot be null");
             }
             this.INSTANCE = iNSTANCE;
             // to ensure "lANGUAGE" is required (not null)
             if (lANGUAGE == null)
             {
-                throw new ArgumentNullException("lANGUAGE is a required property for APIConfigConstants and cannot be null");
+                //throw new ArgumentNullException("lANGUAGE is a required property for APIConfigConstants and cannot be null");
             }
             this.LANGUAGE = lANGUAGE;
         }
@@ -67,19 +67,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets GROUPS
         /// </summary>
-        [DataMember(Name = "GROUPS", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "GROUPS", IsRequired = false, EmitDefaultValue = true)]
         public APIConfigConstantsGROUPS GROUPS { get; set; }
 
         /// <summary>
         /// Gets or Sets INSTANCE
         /// </summary>
-        [DataMember(Name = "INSTANCE", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "INSTANCE", IsRequired = false, EmitDefaultValue = true)]
         public APIConfigConstantsINSTANCE INSTANCE { get; set; }
 
         /// <summary>
         /// Gets or Sets LANGUAGE
         /// </summary>
-        [DataMember(Name = "LANGUAGE", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "LANGUAGE", IsRequired = false, EmitDefaultValue = true)]
         public APIConfigConstantsLANGUAGE LANGUAGE { get; set; }
 
         /// <summary>

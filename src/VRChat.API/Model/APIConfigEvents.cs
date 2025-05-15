@@ -67,70 +67,70 @@ namespace VRChat.API.Model
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "distanceClose", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "distanceClose", IsRequired = false, EmitDefaultValue = true)]
         public int DistanceClose { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "distanceFactor", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "distanceFactor", IsRequired = false, EmitDefaultValue = true)]
         public int DistanceFactor { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "distanceFar", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "distanceFar", IsRequired = false, EmitDefaultValue = true)]
         public int DistanceFar { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "groupDistance", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "groupDistance", IsRequired = false, EmitDefaultValue = true)]
         public int GroupDistance { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "maximumBunchSize", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "maximumBunchSize", IsRequired = false, EmitDefaultValue = true)]
         public int MaximumBunchSize { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "notVisibleFactor", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "notVisibleFactor", IsRequired = false, EmitDefaultValue = true)]
         public int NotVisibleFactor { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "playerOrderBucketSize", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "playerOrderBucketSize", IsRequired = false, EmitDefaultValue = true)]
         public int PlayerOrderBucketSize { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "playerOrderFactor", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "playerOrderFactor", IsRequired = false, EmitDefaultValue = true)]
         public int PlayerOrderFactor { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "slowUpdateFactorThreshold", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "slowUpdateFactorThreshold", IsRequired = false, EmitDefaultValue = true)]
         public int SlowUpdateFactorThreshold { get; set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         /// <value>Unknown</value>
-        [DataMember(Name = "viewSegmentLength", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "viewSegmentLength", IsRequired = false, EmitDefaultValue = true)]
         public int ViewSegmentLength { get; set; }
 
         /// <summary>

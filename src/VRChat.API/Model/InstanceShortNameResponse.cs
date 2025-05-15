@@ -46,7 +46,7 @@ namespace VRChat.API.Model
             // to ensure "secureName" is required (not null)
             if (secureName == null)
             {
-                throw new ArgumentNullException("secureName is a required property for InstanceShortNameResponse and cannot be null");
+                //throw new ArgumentNullException("secureName is a required property for InstanceShortNameResponse and cannot be null");
             }
             this.SecureName = secureName;
             this.ShortName = shortName;
@@ -55,7 +55,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets SecureName
         /// </summary>
-        [DataMember(Name = "secureName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "secureName", IsRequired = false, EmitDefaultValue = true)]
         public string SecureName { get; set; }
 
         /// <summary>

@@ -52,19 +52,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Avatar
         /// </summary>
-        [DataMember(Name = "avatar", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "avatar", IsRequired = false, EmitDefaultValue = true)]
         public int Avatar { get; set; }
 
         /// <summary>
         /// Gets or Sets Friend
         /// </summary>
-        [DataMember(Name = "friend", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "friend", IsRequired = false, EmitDefaultValue = true)]
         public int Friend { get; set; }
 
         /// <summary>
         /// Gets or Sets World
         /// </summary>
-        [DataMember(Name = "world", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "world", IsRequired = false, EmitDefaultValue = true)]
         public int World { get; set; }
 
         /// <summary>

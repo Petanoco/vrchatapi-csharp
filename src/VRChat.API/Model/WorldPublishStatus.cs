@@ -48,7 +48,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets CanPublish
         /// </summary>
-        [DataMember(Name = "canPublish", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "canPublish", IsRequired = false, EmitDefaultValue = true)]
         public bool CanPublish { get; set; }
 
         /// <summary>

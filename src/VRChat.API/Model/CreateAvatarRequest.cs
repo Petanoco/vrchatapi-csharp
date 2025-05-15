@@ -60,13 +60,13 @@ namespace VRChat.API.Model
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for CreateAvatarRequest and cannot be null");
+                //throw new ArgumentNullException("name is a required property for CreateAvatarRequest and cannot be null");
             }
             this.Name = name;
             // to ensure "imageUrl" is required (not null)
             if (imageUrl == null)
             {
-                throw new ArgumentNullException("imageUrl is a required property for CreateAvatarRequest and cannot be null");
+                //throw new ArgumentNullException("imageUrl is a required property for CreateAvatarRequest and cannot be null");
             }
             this.ImageUrl = imageUrl;
             this.AssetUrl = assetUrl;
@@ -95,7 +95,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ImageUrl
         /// </summary>
-        [DataMember(Name = "imageUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "imageUrl", IsRequired = false, EmitDefaultValue = true)]
         public string ImageUrl { get; set; }
 
         /// <summary>

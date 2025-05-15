@@ -45,7 +45,7 @@ namespace VRChat.API.Model
             // to ensure "message" is required (not null)
             if (message == null)
             {
-                throw new ArgumentNullException("message is a required property for UpdateInviteMessageRequest and cannot be null");
+                //throw new ArgumentNullException("message is a required property for UpdateInviteMessageRequest and cannot be null");
             }
             this.Message = message;
         }
@@ -53,7 +53,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Message
         /// </summary>
-        [DataMember(Name = "message", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "message", IsRequired = false, EmitDefaultValue = true)]
         public string Message { get; set; }
 
         /// <summary>

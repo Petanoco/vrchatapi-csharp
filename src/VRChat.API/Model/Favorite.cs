@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public FavoriteType Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Favorite" /> class.
@@ -54,19 +54,19 @@ namespace VRChat.API.Model
             // to ensure "favoriteId" is required (not null)
             if (favoriteId == null)
             {
-                throw new ArgumentNullException("favoriteId is a required property for Favorite and cannot be null");
+                //throw new ArgumentNullException("favoriteId is a required property for Favorite and cannot be null");
             }
             this.FavoriteId = favoriteId;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Favorite and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Favorite and cannot be null");
             }
             this.Id = id;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for Favorite and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for Favorite and cannot be null");
             }
             this.Tags = tags;
             this.Type = type;
@@ -76,20 +76,20 @@ namespace VRChat.API.Model
         /// MUST be either AvatarID, UserID or WorldID.
         /// </summary>
         /// <value>MUST be either AvatarID, UserID or WorldID.</value>
-        [DataMember(Name = "favoriteId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "favoriteId", IsRequired = false, EmitDefaultValue = true)]
         public string FavoriteId { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>

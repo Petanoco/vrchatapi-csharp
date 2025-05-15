@@ -54,45 +54,45 @@ namespace VRChat.API.Model
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for Jam and cannot be null");
+                //throw new ArgumentNullException("description is a required property for Jam and cannot be null");
             }
             this.Description = description;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Jam and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Jam and cannot be null");
             }
             this.Id = id;
             this.IsVisible = isVisible;
             // to ensure "moreInfo" is required (not null)
             if (moreInfo == null)
             {
-                throw new ArgumentNullException("moreInfo is a required property for Jam and cannot be null");
+                //throw new ArgumentNullException("moreInfo is a required property for Jam and cannot be null");
             }
             this.MoreInfo = moreInfo;
             // to ensure "state" is required (not null)
             if (state == null)
             {
-                throw new ArgumentNullException("state is a required property for Jam and cannot be null");
+                //throw new ArgumentNullException("state is a required property for Jam and cannot be null");
             }
             this.State = state;
             // to ensure "stateChangeDates" is required (not null)
             if (stateChangeDates == null)
             {
-                throw new ArgumentNullException("stateChangeDates is a required property for Jam and cannot be null");
+                //throw new ArgumentNullException("stateChangeDates is a required property for Jam and cannot be null");
             }
             this.StateChangeDates = stateChangeDates;
             // to ensure "submissionContentGateDate" is required (not null)
             if (submissionContentGateDate == null)
             {
-                throw new ArgumentNullException("submissionContentGateDate is a required property for Jam and cannot be null");
+                //throw new ArgumentNullException("submissionContentGateDate is a required property for Jam and cannot be null");
             }
             this.SubmissionContentGateDate = submissionContentGateDate;
             this.SubmissionContentGated = submissionContentGated;
             // to ensure "title" is required (not null)
             if (title == null)
             {
-                throw new ArgumentNullException("title is a required property for Jam and cannot be null");
+                //throw new ArgumentNullException("title is a required property for Jam and cannot be null");
             }
             this.Title = title;
             this.UpdatedAt = updatedAt;
@@ -101,62 +101,62 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets IsVisible
         /// </summary>
-        [DataMember(Name = "isVisible", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "isVisible", IsRequired = false, EmitDefaultValue = true)]
         public bool IsVisible { get; set; }
 
         /// <summary>
         /// Gets or Sets MoreInfo
         /// </summary>
-        [DataMember(Name = "moreInfo", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "moreInfo", IsRequired = false, EmitDefaultValue = true)]
         public string MoreInfo { get; set; }
 
         /// <summary>
         /// One of: - submissions_open - closed
         /// </summary>
         /// <value>One of: - submissions_open - closed</value>
-        [DataMember(Name = "state", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "state", IsRequired = false, EmitDefaultValue = true)]
         public string State { get; set; }
 
         /// <summary>
         /// Gets or Sets StateChangeDates
         /// </summary>
-        [DataMember(Name = "stateChangeDates", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "stateChangeDates", IsRequired = false, EmitDefaultValue = true)]
         public JamStateChangeDates StateChangeDates { get; set; }
 
         /// <summary>
         /// Gets or Sets SubmissionContentGateDate
         /// </summary>
-        [DataMember(Name = "submissionContentGateDate", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "submissionContentGateDate", IsRequired = false, EmitDefaultValue = true)]
         public DateTime? SubmissionContentGateDate { get; set; }
 
         /// <summary>
         /// Gets or Sets SubmissionContentGated
         /// </summary>
-        [DataMember(Name = "submissionContentGated", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "submissionContentGated", IsRequired = false, EmitDefaultValue = true)]
         public bool SubmissionContentGated { get; set; }
 
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
-        [DataMember(Name = "title", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "title", IsRequired = false, EmitDefaultValue = true)]
         public string Title { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
-        [DataMember(Name = "updated_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updated_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>

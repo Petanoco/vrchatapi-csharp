@@ -45,7 +45,7 @@ namespace VRChat.API.Model
             // to ensure "url" is required (not null)
             if (url == null)
             {
-                throw new ArgumentNullException("url is a required property for FileUploadURL and cannot be null");
+                //throw new ArgumentNullException("url is a required property for FileUploadURL and cannot be null");
             }
             this.Url = url;
         }
@@ -53,7 +53,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Url
         /// </summary>
-        [DataMember(Name = "url", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "url", IsRequired = false, EmitDefaultValue = true)]
         public string Url { get; set; }
 
         /// <summary>

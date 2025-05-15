@@ -48,7 +48,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets EconomyOnline
         /// </summary>
-        [DataMember(Name = "economyOnline", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "economyOnline", IsRequired = false, EmitDefaultValue = true)]
         public bool EconomyOnline { get; set; }
 
         /// <summary>

@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public FavoriteType Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="AddFavoriteRequest" /> class.
@@ -54,13 +54,13 @@ namespace VRChat.API.Model
             // to ensure "favoriteId" is required (not null)
             if (favoriteId == null)
             {
-                throw new ArgumentNullException("favoriteId is a required property for AddFavoriteRequest and cannot be null");
+                //throw new ArgumentNullException("favoriteId is a required property for AddFavoriteRequest and cannot be null");
             }
             this.FavoriteId = favoriteId;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for AddFavoriteRequest and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for AddFavoriteRequest and cannot be null");
             }
             this.Tags = tags;
         }
@@ -69,14 +69,14 @@ namespace VRChat.API.Model
         /// Must be either AvatarID, WorldID or UserID.
         /// </summary>
         /// <value>Must be either AvatarID, WorldID or UserID.</value>
-        [DataMember(Name = "favoriteId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "favoriteId", IsRequired = false, EmitDefaultValue = true)]
         public string FavoriteId { get; set; }
 
         /// <summary>
         /// Tags indicate which group this favorite belongs to. Adding multiple groups makes it show up in all. Removing it from one in that case removes it from all.
         /// </summary>
         /// <value>Tags indicate which group this favorite belongs to. Adding multiple groups makes it show up in all. Removing it from one in that case removes it from all.</value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>

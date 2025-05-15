@@ -35,7 +35,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Period
         /// </summary>
-        [DataMember(Name = "period", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "period", IsRequired = false, EmitDefaultValue = true)]
         public SubscriptionPeriod Period { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Subscription" /> class.
@@ -60,20 +60,20 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Subscription and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Subscription and cannot be null");
             }
             this.Id = id;
             // to ensure "steamItemId" is required (not null)
             if (steamItemId == null)
             {
-                throw new ArgumentNullException("steamItemId is a required property for Subscription and cannot be null");
+                //throw new ArgumentNullException("steamItemId is a required property for Subscription and cannot be null");
             }
             this.SteamItemId = steamItemId;
             this.Amount = amount;
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for Subscription and cannot be null");
+                //throw new ArgumentNullException("description is a required property for Subscription and cannot be null");
             }
             this.Description = description;
             this.Period = period;
@@ -87,13 +87,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets SteamItemId
         /// </summary>
-        [DataMember(Name = "steamItemId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "steamItemId", IsRequired = false, EmitDefaultValue = true)]
         public string SteamItemId { get; set; }
 
         /// <summary>
@@ -123,19 +123,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Amount
         /// </summary>
-        [DataMember(Name = "amount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "amount", IsRequired = false, EmitDefaultValue = true)]
         public decimal Amount { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets Tier
         /// </summary>
-        [DataMember(Name = "tier", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tier", IsRequired = false, EmitDefaultValue = true)]
         public int Tier { get; set; }
 
         /// <summary>

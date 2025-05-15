@@ -55,67 +55,67 @@ namespace VRChat.API.Model
             // to ensure "appStore" is required (not null)
             if (appStore == null)
             {
-                throw new ArgumentNullException("appStore is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("appStore is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.AppStore = appStore;
             // to ensure "_default" is required (not null)
             if (_default == null)
             {
-                throw new ArgumentNullException("_default is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("_default is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.Default = _default;
             // to ensure "firebase" is required (not null)
             if (firebase == null)
             {
-                throw new ArgumentNullException("firebase is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("firebase is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.Firebase = firebase;
             // to ensure "firebaseiOS" is required (not null)
             if (firebaseiOS == null)
             {
-                throw new ArgumentNullException("firebaseiOS is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("firebaseiOS is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.FirebaseiOS = firebaseiOS;
             // to ensure "googlePlay" is required (not null)
             if (googlePlay == null)
             {
-                throw new ArgumentNullException("googlePlay is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("googlePlay is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.GooglePlay = googlePlay;
             // to ensure "pC" is required (not null)
             if (pC == null)
             {
-                throw new ArgumentNullException("pC is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("pC is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.PC = pC;
             // to ensure "picoStore" is required (not null)
             if (picoStore == null)
             {
-                throw new ArgumentNullException("picoStore is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("picoStore is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.PicoStore = picoStore;
             // to ensure "questAppLab" is required (not null)
             if (questAppLab == null)
             {
-                throw new ArgumentNullException("questAppLab is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("questAppLab is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.QuestAppLab = questAppLab;
             // to ensure "questStore" is required (not null)
             if (questStore == null)
             {
-                throw new ArgumentNullException("questStore is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("questStore is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.QuestStore = questStore;
             // to ensure "testFlight" is required (not null)
             if (testFlight == null)
             {
-                throw new ArgumentNullException("testFlight is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("testFlight is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.TestFlight = testFlight;
             // to ensure "xRElite" is required (not null)
             if (xRElite == null)
             {
-                throw new ArgumentNullException("xRElite is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
+                //throw new ArgumentNullException("xRElite is a required property for APIConfigMinSupportedClientBuildNumber and cannot be null");
             }
             this.XRElite = xRElite;
         }
@@ -123,67 +123,67 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets AppStore
         /// </summary>
-        [DataMember(Name = "AppStore", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "AppStore", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo AppStore { get; set; }
 
         /// <summary>
         /// Gets or Sets Default
         /// </summary>
-        [DataMember(Name = "Default", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "Default", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo Default { get; set; }
 
         /// <summary>
         /// Gets or Sets Firebase
         /// </summary>
-        [DataMember(Name = "Firebase", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "Firebase", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo Firebase { get; set; }
 
         /// <summary>
         /// Gets or Sets FirebaseiOS
         /// </summary>
-        [DataMember(Name = "FirebaseiOS", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "FirebaseiOS", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo FirebaseiOS { get; set; }
 
         /// <summary>
         /// Gets or Sets GooglePlay
         /// </summary>
-        [DataMember(Name = "GooglePlay", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "GooglePlay", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo GooglePlay { get; set; }
 
         /// <summary>
         /// Gets or Sets PC
         /// </summary>
-        [DataMember(Name = "PC", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "PC", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo PC { get; set; }
 
         /// <summary>
         /// Gets or Sets PicoStore
         /// </summary>
-        [DataMember(Name = "PicoStore", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "PicoStore", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo PicoStore { get; set; }
 
         /// <summary>
         /// Gets or Sets QuestAppLab
         /// </summary>
-        [DataMember(Name = "QuestAppLab", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "QuestAppLab", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo QuestAppLab { get; set; }
 
         /// <summary>
         /// Gets or Sets QuestStore
         /// </summary>
-        [DataMember(Name = "QuestStore", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "QuestStore", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo QuestStore { get; set; }
 
         /// <summary>
         /// Gets or Sets TestFlight
         /// </summary>
-        [DataMember(Name = "TestFlight", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "TestFlight", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo TestFlight { get; set; }
 
         /// <summary>
         /// Gets or Sets XRElite
         /// </summary>
-        [DataMember(Name = "XRElite", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "XRElite", IsRequired = false, EmitDefaultValue = true)]
         public PlatformBuildInfo XRElite { get; set; }
 
         /// <summary>

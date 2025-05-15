@@ -49,31 +49,31 @@ namespace VRChat.API.Model
             // to ensure "sdk2" is required (not null)
             if (sdk2 == null)
             {
-                throw new ArgumentNullException("sdk2 is a required property for APIConfigDownloadURLList and cannot be null");
+                //throw new ArgumentNullException("sdk2 is a required property for APIConfigDownloadURLList and cannot be null");
             }
             this.Sdk2 = sdk2;
             // to ensure "sdk3Avatars" is required (not null)
             if (sdk3Avatars == null)
             {
-                throw new ArgumentNullException("sdk3Avatars is a required property for APIConfigDownloadURLList and cannot be null");
+                //throw new ArgumentNullException("sdk3Avatars is a required property for APIConfigDownloadURLList and cannot be null");
             }
             this.Sdk3Avatars = sdk3Avatars;
             // to ensure "sdk3Worlds" is required (not null)
             if (sdk3Worlds == null)
             {
-                throw new ArgumentNullException("sdk3Worlds is a required property for APIConfigDownloadURLList and cannot be null");
+                //throw new ArgumentNullException("sdk3Worlds is a required property for APIConfigDownloadURLList and cannot be null");
             }
             this.Sdk3Worlds = sdk3Worlds;
             // to ensure "vcc" is required (not null)
             if (vcc == null)
             {
-                throw new ArgumentNullException("vcc is a required property for APIConfigDownloadURLList and cannot be null");
+                //throw new ArgumentNullException("vcc is a required property for APIConfigDownloadURLList and cannot be null");
             }
             this.Vcc = vcc;
             // to ensure "bootstrap" is required (not null)
             if (bootstrap == null)
             {
-                throw new ArgumentNullException("bootstrap is a required property for APIConfigDownloadURLList and cannot be null");
+                //throw new ArgumentNullException("bootstrap is a required property for APIConfigDownloadURLList and cannot be null");
             }
             this.Bootstrap = bootstrap;
         }
@@ -82,7 +82,7 @@ namespace VRChat.API.Model
         /// Download link for legacy SDK2
         /// </summary>
         /// <value>Download link for legacy SDK2</value>
-        [DataMember(Name = "sdk2", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sdk2", IsRequired = false, EmitDefaultValue = true)]
         [Obsolete]
         public string Sdk2 { get; set; }
 
@@ -90,28 +90,28 @@ namespace VRChat.API.Model
         /// Download link for SDK3 for Avatars
         /// </summary>
         /// <value>Download link for SDK3 for Avatars</value>
-        [DataMember(Name = "sdk3-avatars", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sdk3-avatars", IsRequired = false, EmitDefaultValue = true)]
         public string Sdk3Avatars { get; set; }
 
         /// <summary>
         /// Download link for SDK3 for Worlds
         /// </summary>
         /// <value>Download link for SDK3 for Worlds</value>
-        [DataMember(Name = "sdk3-worlds", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "sdk3-worlds", IsRequired = false, EmitDefaultValue = true)]
         public string Sdk3Worlds { get; set; }
 
         /// <summary>
         /// Download link for the Creator Companion
         /// </summary>
         /// <value>Download link for the Creator Companion</value>
-        [DataMember(Name = "vcc", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "vcc", IsRequired = false, EmitDefaultValue = true)]
         public string Vcc { get; set; }
 
         /// <summary>
         /// Download link for ???
         /// </summary>
         /// <value>Download link for ???</value>
-        [DataMember(Name = "bootstrap", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "bootstrap", IsRequired = false, EmitDefaultValue = true)]
         public string Bootstrap { get; set; }
 
         /// <summary>

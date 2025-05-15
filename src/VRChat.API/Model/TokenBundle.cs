@@ -51,33 +51,33 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for TokenBundle and cannot be null");
+                //throw new ArgumentNullException("id is a required property for TokenBundle and cannot be null");
             }
             this.Id = id;
             // to ensure "steamItemId" is required (not null)
             if (steamItemId == null)
             {
-                throw new ArgumentNullException("steamItemId is a required property for TokenBundle and cannot be null");
+                //throw new ArgumentNullException("steamItemId is a required property for TokenBundle and cannot be null");
             }
             this.SteamItemId = steamItemId;
             // to ensure "oculusSku" is required (not null)
             if (oculusSku == null)
             {
-                throw new ArgumentNullException("oculusSku is a required property for TokenBundle and cannot be null");
+                //throw new ArgumentNullException("oculusSku is a required property for TokenBundle and cannot be null");
             }
             this.OculusSku = oculusSku;
             this.Amount = amount;
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for TokenBundle and cannot be null");
+                //throw new ArgumentNullException("description is a required property for TokenBundle and cannot be null");
             }
             this.Description = description;
             this.Tokens = tokens;
             // to ensure "imageUrl" is required (not null)
             if (imageUrl == null)
             {
-                throw new ArgumentNullException("imageUrl is a required property for TokenBundle and cannot be null");
+                //throw new ArgumentNullException("imageUrl is a required property for TokenBundle and cannot be null");
             }
             this.ImageUrl = imageUrl;
         }
@@ -85,46 +85,46 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets SteamItemId
         /// </summary>
-        [DataMember(Name = "steamItemId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "steamItemId", IsRequired = false, EmitDefaultValue = true)]
         public string SteamItemId { get; set; }
 
         /// <summary>
         /// Gets or Sets OculusSku
         /// </summary>
-        [DataMember(Name = "oculusSku", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "oculusSku", IsRequired = false, EmitDefaultValue = true)]
         public string OculusSku { get; set; }
 
         /// <summary>
         /// price of the bundle
         /// </summary>
         /// <value>price of the bundle</value>
-        [DataMember(Name = "amount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "amount", IsRequired = false, EmitDefaultValue = true)]
         public int Amount { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// number of tokens received
         /// </summary>
         /// <value>number of tokens received</value>
-        [DataMember(Name = "tokens", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tokens", IsRequired = false, EmitDefaultValue = true)]
         public int Tokens { get; set; }
 
         /// <summary>
         /// direct url to image
         /// </summary>
         /// <value>direct url to image</value>
-        [DataMember(Name = "imageUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "imageUrl", IsRequired = false, EmitDefaultValue = true)]
         public string ImageUrl { get; set; }
 
         /// <summary>

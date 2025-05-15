@@ -46,13 +46,13 @@ namespace VRChat.API.Model
             // to ensure "text" is required (not null)
             if (text == null)
             {
-                throw new ArgumentNullException("text is a required property for ReportReason and cannot be null");
+                //throw new ArgumentNullException("text is a required property for ReportReason and cannot be null");
             }
             this.Text = text;
             // to ensure "tooltip" is required (not null)
             if (tooltip == null)
             {
-                throw new ArgumentNullException("tooltip is a required property for ReportReason and cannot be null");
+                //throw new ArgumentNullException("tooltip is a required property for ReportReason and cannot be null");
             }
             this.Tooltip = tooltip;
         }
@@ -61,14 +61,14 @@ namespace VRChat.API.Model
         /// The label or name of the report reason
         /// </summary>
         /// <value>The label or name of the report reason</value>
-        [DataMember(Name = "text", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "text", IsRequired = false, EmitDefaultValue = true)]
         public string Text { get; set; }
 
         /// <summary>
         /// A brief explanation of what this reason entails
         /// </summary>
         /// <value>A brief explanation of what this reason entails</value>
-        [DataMember(Name = "tooltip", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tooltip", IsRequired = false, EmitDefaultValue = true)]
         public string Tooltip { get; set; }
 
         /// <summary>

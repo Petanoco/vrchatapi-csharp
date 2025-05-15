@@ -48,25 +48,25 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for LicenseGroup and cannot be null");
+                //throw new ArgumentNullException("id is a required property for LicenseGroup and cannot be null");
             }
             this.Id = id;
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for LicenseGroup and cannot be null");
+                //throw new ArgumentNullException("name is a required property for LicenseGroup and cannot be null");
             }
             this.Name = name;
             // to ensure "description" is required (not null)
             if (description == null)
             {
-                throw new ArgumentNullException("description is a required property for LicenseGroup and cannot be null");
+                //throw new ArgumentNullException("description is a required property for LicenseGroup and cannot be null");
             }
             this.Description = description;
             // to ensure "licenses" is required (not null)
             if (licenses == null)
             {
-                throw new ArgumentNullException("licenses is a required property for LicenseGroup and cannot be null");
+                //throw new ArgumentNullException("licenses is a required property for LicenseGroup and cannot be null");
             }
             this.Licenses = licenses;
         }
@@ -74,25 +74,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets Description
         /// </summary>
-        [DataMember(Name = "description", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "description", IsRequired = false, EmitDefaultValue = true)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets Licenses
         /// </summary>
-        [DataMember(Name = "licenses", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "licenses", IsRequired = false, EmitDefaultValue = true)]
         public List<License> Licenses { get; set; }
 
         /// <summary>

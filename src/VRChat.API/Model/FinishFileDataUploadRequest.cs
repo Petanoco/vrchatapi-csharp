@@ -47,13 +47,13 @@ namespace VRChat.API.Model
             // to ensure "nextPartNumber" is required (not null)
             if (nextPartNumber == null)
             {
-                throw new ArgumentNullException("nextPartNumber is a required property for FinishFileDataUploadRequest and cannot be null");
+                //throw new ArgumentNullException("nextPartNumber is a required property for FinishFileDataUploadRequest and cannot be null");
             }
             this.NextPartNumber = nextPartNumber;
             // to ensure "maxParts" is required (not null)
             if (maxParts == null)
             {
-                throw new ArgumentNullException("maxParts is a required property for FinishFileDataUploadRequest and cannot be null");
+                //throw new ArgumentNullException("maxParts is a required property for FinishFileDataUploadRequest and cannot be null");
             }
             this.MaxParts = maxParts;
             this.Etags = etags;
@@ -70,7 +70,7 @@ namespace VRChat.API.Model
         /// Always a zero in string form, despite how many parts uploaded.
         /// </summary>
         /// <value>Always a zero in string form, despite how many parts uploaded.</value>
-        [DataMember(Name = "nextPartNumber", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "nextPartNumber", IsRequired = false, EmitDefaultValue = true)]
         [Obsolete]
         public string NextPartNumber { get; set; }
 
@@ -78,7 +78,7 @@ namespace VRChat.API.Model
         /// Always a zero in string form, despite how many parts uploaded.
         /// </summary>
         /// <value>Always a zero in string form, despite how many parts uploaded.</value>
-        [DataMember(Name = "maxParts", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "maxParts", IsRequired = false, EmitDefaultValue = true)]
         [Obsolete]
         public string MaxParts { get; set; }
 

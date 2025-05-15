@@ -48,7 +48,7 @@ namespace VRChat.API.Model
             // to ensure "signatureMd5" is required (not null)
             if (signatureMd5 == null)
             {
-                throw new ArgumentNullException("signatureMd5 is a required property for CreateFileVersionRequest and cannot be null");
+                //throw new ArgumentNullException("signatureMd5 is a required property for CreateFileVersionRequest and cannot be null");
             }
             this.SignatureMd5 = signatureMd5;
             this.SignatureSizeInBytes = signatureSizeInBytes;
@@ -59,13 +59,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets SignatureMd5
         /// </summary>
-        [DataMember(Name = "signatureMd5", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "signatureMd5", IsRequired = false, EmitDefaultValue = true)]
         public string SignatureMd5 { get; set; }
 
         /// <summary>
         /// Gets or Sets SignatureSizeInBytes
         /// </summary>
-        [DataMember(Name = "signatureSizeInBytes", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "signatureSizeInBytes", IsRequired = false, EmitDefaultValue = true)]
         public int SignatureSizeInBytes { get; set; }
 
         /// <summary>

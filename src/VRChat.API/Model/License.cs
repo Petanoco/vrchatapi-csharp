@@ -35,13 +35,13 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ForType
         /// </summary>
-        [DataMember(Name = "forType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "forType", IsRequired = false, EmitDefaultValue = true)]
         public LicenseType ForType { get; set; }
 
         /// <summary>
         /// Gets or Sets ForAction
         /// </summary>
-        [DataMember(Name = "forAction", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "forAction", IsRequired = false, EmitDefaultValue = true)]
         public LicenseAction ForAction { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="License" /> class.
@@ -60,14 +60,14 @@ namespace VRChat.API.Model
             // to ensure "forId" is required (not null)
             if (forId == null)
             {
-                throw new ArgumentNullException("forId is a required property for License and cannot be null");
+                //throw new ArgumentNullException("forId is a required property for License and cannot be null");
             }
             this.ForId = forId;
             this.ForType = forType;
             // to ensure "forName" is required (not null)
             if (forName == null)
             {
-                throw new ArgumentNullException("forName is a required property for License and cannot be null");
+                //throw new ArgumentNullException("forName is a required property for License and cannot be null");
             }
             this.ForName = forName;
             this.ForAction = forAction;
@@ -77,13 +77,13 @@ namespace VRChat.API.Model
         /// Either a AvatarID, LicenseGroupID, PermissionID or ProductID. This depends on the &#x60;forType&#x60; field.
         /// </summary>
         /// <value>Either a AvatarID, LicenseGroupID, PermissionID or ProductID. This depends on the &#x60;forType&#x60; field.</value>
-        [DataMember(Name = "forId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "forId", IsRequired = false, EmitDefaultValue = true)]
         public string ForId { get; set; }
 
         /// <summary>
         /// Gets or Sets ForName
         /// </summary>
-        [DataMember(Name = "forName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "forName", IsRequired = false, EmitDefaultValue = true)]
         public string ForName { get; set; }
 
         /// <summary>

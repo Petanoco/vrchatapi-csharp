@@ -48,7 +48,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ResponseSlot
         /// </summary>
-        [DataMember(Name = "responseSlot", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "responseSlot", IsRequired = false, EmitDefaultValue = true)]
         public int ResponseSlot { get; set; }
 
         /// <summary>

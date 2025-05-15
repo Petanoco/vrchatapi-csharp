@@ -54,43 +54,43 @@ namespace VRChat.API.Model
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for ServiceStatus and cannot be null");
+                //throw new ArgumentNullException("id is a required property for ServiceStatus and cannot be null");
             }
             this.Id = id;
             // to ensure "progress" is required (not null)
             if (progress == null)
             {
-                throw new ArgumentNullException("progress is a required property for ServiceStatus and cannot be null");
+                //throw new ArgumentNullException("progress is a required property for ServiceStatus and cannot be null");
             }
             this.Progress = progress;
             // to ensure "requesterUserId" is required (not null)
             if (requesterUserId == null)
             {
-                throw new ArgumentNullException("requesterUserId is a required property for ServiceStatus and cannot be null");
+                //throw new ArgumentNullException("requesterUserId is a required property for ServiceStatus and cannot be null");
             }
             this.RequesterUserId = requesterUserId;
             // to ensure "state" is required (not null)
             if (state == null)
             {
-                throw new ArgumentNullException("state is a required property for ServiceStatus and cannot be null");
+                //throw new ArgumentNullException("state is a required property for ServiceStatus and cannot be null");
             }
             this.State = state;
             // to ensure "subjectId" is required (not null)
             if (subjectId == null)
             {
-                throw new ArgumentNullException("subjectId is a required property for ServiceStatus and cannot be null");
+                //throw new ArgumentNullException("subjectId is a required property for ServiceStatus and cannot be null");
             }
             this.SubjectId = subjectId;
             // to ensure "subjectType" is required (not null)
             if (subjectType == null)
             {
-                throw new ArgumentNullException("subjectType is a required property for ServiceStatus and cannot be null");
+                //throw new ArgumentNullException("subjectType is a required property for ServiceStatus and cannot be null");
             }
             this.SubjectType = subjectType;
             // to ensure "type" is required (not null)
             if (type == null)
             {
-                throw new ArgumentNullException("type is a required property for ServiceStatus and cannot be null");
+                //throw new ArgumentNullException("type is a required property for ServiceStatus and cannot be null");
             }
             this.Type = type;
             this.UpdatedAt = updatedAt;
@@ -99,60 +99,60 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name = "created_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "created_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// The id of this service, NOT the id of the thing this service was requested for.
         /// </summary>
         /// <value>The id of this service, NOT the id of the thing this service was requested for.</value>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets Progress
         /// </summary>
-        [DataMember(Name = "progress", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "progress", IsRequired = false, EmitDefaultValue = true)]
         public List<Object> Progress { get; set; }
 
         /// <summary>
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "requesterUserId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "requesterUserId", IsRequired = false, EmitDefaultValue = true)]
         public string RequesterUserId { get; set; }
 
         /// <summary>
         /// Gets or Sets State
         /// </summary>
-        [DataMember(Name = "state", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "state", IsRequired = false, EmitDefaultValue = true)]
         public string State { get; set; }
 
         /// <summary>
         /// The id of the thing this service was requested for.
         /// </summary>
         /// <value>The id of the thing this service was requested for.</value>
-        [DataMember(Name = "subjectId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "subjectId", IsRequired = false, EmitDefaultValue = true)]
         public string SubjectId { get; set; }
 
         /// <summary>
         /// The kind of the thing this service was requested for.
         /// </summary>
         /// <value>The kind of the thing this service was requested for.</value>
-        [DataMember(Name = "subjectType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "subjectType", IsRequired = false, EmitDefaultValue = true)]
         public string SubjectType { get; set; }
 
         /// <summary>
         /// The kind of service that was requested.
         /// </summary>
         /// <value>The kind of service that was requested.</value>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public string Type { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
         /// </summary>
-        [DataMember(Name = "updated_at", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "updated_at", IsRequired = false, EmitDefaultValue = true)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>

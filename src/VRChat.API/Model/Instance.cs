@@ -35,19 +35,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets PhotonRegion
         /// </summary>
-        [DataMember(Name = "photonRegion", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "photonRegion", IsRequired = false, EmitDefaultValue = true)]
         public Region PhotonRegion { get; set; }
 
         /// <summary>
         /// Gets or Sets Region
         /// </summary>
-        [DataMember(Name = "region", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "region", IsRequired = false, EmitDefaultValue = true)]
         public InstanceRegion Region { get; set; }
 
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name = "type", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "type", IsRequired = false, EmitDefaultValue = true)]
         public InstanceType Type { get; set; }
 
         /// <summary>
@@ -112,45 +112,45 @@ namespace VRChat.API.Model
             // to ensure "clientNumber" is required (not null)
             if (clientNumber == null)
             {
-                throw new ArgumentNullException("clientNumber is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("clientNumber is a required property for Instance and cannot be null");
             }
             this.ClientNumber = clientNumber;
             // to ensure "displayName" is required (not null)
             if (displayName == null)
             {
-                throw new ArgumentNullException("displayName is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("displayName is a required property for Instance and cannot be null");
             }
             this.DisplayName = displayName;
             this.Full = full;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("id is a required property for Instance and cannot be null");
             }
             this.Id = id;
             // to ensure "instanceId" is required (not null)
             if (instanceId == null)
             {
-                throw new ArgumentNullException("instanceId is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("instanceId is a required property for Instance and cannot be null");
             }
             this.InstanceId = instanceId;
             // to ensure "instancePersistenceEnabled" is required (not null)
             if (instancePersistenceEnabled == null)
             {
-                throw new ArgumentNullException("instancePersistenceEnabled is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("instancePersistenceEnabled is a required property for Instance and cannot be null");
             }
             this.InstancePersistenceEnabled = instancePersistenceEnabled;
             // to ensure "location" is required (not null)
             if (location == null)
             {
-                throw new ArgumentNullException("location is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("location is a required property for Instance and cannot be null");
             }
             this.Location = location;
             this.NUsers = nUsers;
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("name is a required property for Instance and cannot be null");
             }
             this.Name = name;
             this.Permanent = permanent;
@@ -158,33 +158,33 @@ namespace VRChat.API.Model
             // to ensure "platforms" is required (not null)
             if (platforms == null)
             {
-                throw new ArgumentNullException("platforms is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("platforms is a required property for Instance and cannot be null");
             }
             this.Platforms = platforms;
             // to ensure "playerPersistenceEnabled" is required (not null)
             if (playerPersistenceEnabled == null)
             {
-                throw new ArgumentNullException("playerPersistenceEnabled is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("playerPersistenceEnabled is a required property for Instance and cannot be null");
             }
             this.PlayerPersistenceEnabled = playerPersistenceEnabled;
             this.Region = region;
             // to ensure "secureName" is required (not null)
             if (secureName == null)
             {
-                throw new ArgumentNullException("secureName is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("secureName is a required property for Instance and cannot be null");
             }
             this.SecureName = secureName;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for Instance and cannot be null");
             }
             this.Tags = tags;
             this.Type = type;
             // to ensure "worldId" is required (not null)
             if (worldId == null)
             {
-                throw new ArgumentNullException("worldId is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("worldId is a required property for Instance and cannot be null");
             }
             this.WorldId = worldId;
             this.QueueEnabled = queueEnabled;
@@ -195,7 +195,7 @@ namespace VRChat.API.Model
             // to ensure "world" is required (not null)
             if (world == null)
             {
-                throw new ArgumentNullException("world is a required property for Instance and cannot be null");
+                //throw new ArgumentNullException("world is a required property for Instance and cannot be null");
             }
             this.World = world;
             this.AgeGate = ageGate;
@@ -217,7 +217,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Active
         /// </summary>
-        [DataMember(Name = "active", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "active", IsRequired = false, EmitDefaultValue = true)]
         public bool Active { get; set; }
 
         /// <summary>
@@ -229,33 +229,33 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets CanRequestInvite
         /// </summary>
-        [DataMember(Name = "canRequestInvite", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "canRequestInvite", IsRequired = false, EmitDefaultValue = true)]
         public bool CanRequestInvite { get; set; }
 
         /// <summary>
         /// Gets or Sets Capacity
         /// </summary>
-        [DataMember(Name = "capacity", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "capacity", IsRequired = false, EmitDefaultValue = true)]
         public int Capacity { get; set; }
 
         /// <summary>
         /// Always returns \&quot;unknown\&quot;.
         /// </summary>
         /// <value>Always returns \&quot;unknown\&quot;.</value>
-        [DataMember(Name = "clientNumber", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "clientNumber", IsRequired = false, EmitDefaultValue = true)]
         [Obsolete]
         public string ClientNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets DisplayName
         /// </summary>
-        [DataMember(Name = "displayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "displayName", IsRequired = false, EmitDefaultValue = true)]
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Gets or Sets Full
         /// </summary>
-        [DataMember(Name = "full", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "full", IsRequired = false, EmitDefaultValue = true)]
         public bool Full { get; set; }
 
         /// <summary>
@@ -268,38 +268,38 @@ namespace VRChat.API.Model
         /// InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.
         /// </summary>
         /// <value>InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.</value>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
         /// Gets or Sets InstanceId
         /// </summary>
-        [DataMember(Name = "instanceId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "instanceId", IsRequired = false, EmitDefaultValue = true)]
         public string InstanceId { get; set; }
 
         /// <summary>
         /// Gets or Sets InstancePersistenceEnabled
         /// </summary>
-        [DataMember(Name = "instancePersistenceEnabled", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "instancePersistenceEnabled", IsRequired = false, EmitDefaultValue = true)]
         public string InstancePersistenceEnabled { get; set; }
 
         /// <summary>
         /// InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.
         /// </summary>
         /// <value>InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.</value>
-        [DataMember(Name = "location", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "location", IsRequired = false, EmitDefaultValue = true)]
         public string Location { get; set; }
 
         /// <summary>
         /// Gets or Sets NUsers
         /// </summary>
-        [DataMember(Name = "n_users", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "n_users", IsRequired = false, EmitDefaultValue = true)]
         public int NUsers { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "name", IsRequired = false, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
@@ -312,25 +312,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Permanent
         /// </summary>
-        [DataMember(Name = "permanent", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "permanent", IsRequired = false, EmitDefaultValue = true)]
         public bool Permanent { get; set; }
 
         /// <summary>
         /// Gets or Sets Platforms
         /// </summary>
-        [DataMember(Name = "platforms", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "platforms", IsRequired = false, EmitDefaultValue = true)]
         public InstancePlatforms Platforms { get; set; }
 
         /// <summary>
         /// Gets or Sets PlayerPersistenceEnabled
         /// </summary>
-        [DataMember(Name = "playerPersistenceEnabled", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "playerPersistenceEnabled", IsRequired = false, EmitDefaultValue = true)]
         public bool? PlayerPersistenceEnabled { get; set; }
 
         /// <summary>
         /// Gets or Sets SecureName
         /// </summary>
-        [DataMember(Name = "secureName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "secureName", IsRequired = false, EmitDefaultValue = true)]
         public string SecureName { get; set; }
 
         /// <summary>
@@ -343,14 +343,14 @@ namespace VRChat.API.Model
         /// The tags array on Instances usually contain the language tags of the people in the instance. 
         /// </summary>
         /// <value>The tags array on Instances usually contain the language tags of the people in the instance. </value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
         /// WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.
         /// </summary>
         /// <value>WorldID be \&quot;offline\&quot; on User profiles if you are not friends with that user.</value>
-        [DataMember(Name = "worldId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "worldId", IsRequired = false, EmitDefaultValue = true)]
         public string WorldId { get; set; }
 
         /// <summary>
@@ -377,19 +377,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets QueueEnabled
         /// </summary>
-        [DataMember(Name = "queueEnabled", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "queueEnabled", IsRequired = false, EmitDefaultValue = true)]
         public bool QueueEnabled { get; set; }
 
         /// <summary>
         /// Gets or Sets QueueSize
         /// </summary>
-        [DataMember(Name = "queueSize", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "queueSize", IsRequired = false, EmitDefaultValue = true)]
         public int QueueSize { get; set; }
 
         /// <summary>
         /// Gets or Sets RecommendedCapacity
         /// </summary>
-        [DataMember(Name = "recommendedCapacity", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "recommendedCapacity", IsRequired = false, EmitDefaultValue = true)]
         public int RecommendedCapacity { get; set; }
 
         /// <summary>
@@ -401,19 +401,19 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Strict
         /// </summary>
-        [DataMember(Name = "strict", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "strict", IsRequired = false, EmitDefaultValue = true)]
         public bool Strict { get; set; }
 
         /// <summary>
         /// Gets or Sets UserCount
         /// </summary>
-        [DataMember(Name = "userCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "userCount", IsRequired = false, EmitDefaultValue = true)]
         public int UserCount { get; set; }
 
         /// <summary>
         /// Gets or Sets World
         /// </summary>
-        [DataMember(Name = "world", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "world", IsRequired = false, EmitDefaultValue = true)]
         public World World { get; set; }
 
         /// <summary>

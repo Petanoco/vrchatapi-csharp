@@ -45,7 +45,7 @@ namespace VRChat.API.Model
             // to ensure "code" is required (not null)
             if (code == null)
             {
-                throw new ArgumentNullException("code is a required property for TwoFactorEmailCode and cannot be null");
+                //throw new ArgumentNullException("code is a required property for TwoFactorEmailCode and cannot be null");
             }
             this.Code = code;
         }
@@ -53,7 +53,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Code
         /// </summary>
-        [DataMember(Name = "code", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "code", IsRequired = false, EmitDefaultValue = true)]
         public string Code { get; set; }
 
         /// <summary>

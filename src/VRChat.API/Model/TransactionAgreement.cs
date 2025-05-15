@@ -62,70 +62,70 @@ namespace VRChat.API.Model
             // to ensure "agreementId" is required (not null)
             if (agreementId == null)
             {
-                throw new ArgumentNullException("agreementId is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("agreementId is a required property for TransactionAgreement and cannot be null");
             }
             this.AgreementId = agreementId;
             this.ItemId = itemId;
             // to ensure "agreement" is required (not null)
             if (agreement == null)
             {
-                throw new ArgumentNullException("agreement is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("agreement is a required property for TransactionAgreement and cannot be null");
             }
             this.Agreement = agreement;
             // to ensure "status" is required (not null)
             if (status == null)
             {
-                throw new ArgumentNullException("status is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("status is a required property for TransactionAgreement and cannot be null");
             }
             this.Status = status;
             // to ensure "period" is required (not null)
             if (period == null)
             {
-                throw new ArgumentNullException("period is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("period is a required property for TransactionAgreement and cannot be null");
             }
             this.Period = period;
             this.Frequency = frequency;
             // to ensure "billingType" is required (not null)
             if (billingType == null)
             {
-                throw new ArgumentNullException("billingType is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("billingType is a required property for TransactionAgreement and cannot be null");
             }
             this.BillingType = billingType;
             // to ensure "startDate" is required (not null)
             if (startDate == null)
             {
-                throw new ArgumentNullException("startDate is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("startDate is a required property for TransactionAgreement and cannot be null");
             }
             this.StartDate = startDate;
             // to ensure "endDate" is required (not null)
             if (endDate == null)
             {
-                throw new ArgumentNullException("endDate is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("endDate is a required property for TransactionAgreement and cannot be null");
             }
             this.EndDate = endDate;
             this.RecurringAmt = recurringAmt;
             // to ensure "currency" is required (not null)
             if (currency == null)
             {
-                throw new ArgumentNullException("currency is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("currency is a required property for TransactionAgreement and cannot be null");
             }
             this.Currency = currency;
             // to ensure "timeCreated" is required (not null)
             if (timeCreated == null)
             {
-                throw new ArgumentNullException("timeCreated is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("timeCreated is a required property for TransactionAgreement and cannot be null");
             }
             this.TimeCreated = timeCreated;
             // to ensure "nextPayment" is required (not null)
             if (nextPayment == null)
             {
-                throw new ArgumentNullException("nextPayment is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("nextPayment is a required property for TransactionAgreement and cannot be null");
             }
             this.NextPayment = nextPayment;
             // to ensure "lastPayment" is required (not null)
             if (lastPayment == null)
             {
-                throw new ArgumentNullException("lastPayment is a required property for TransactionAgreement and cannot be null");
+                //throw new ArgumentNullException("lastPayment is a required property for TransactionAgreement and cannot be null");
             }
             this.LastPayment = lastPayment;
             this.LastAmount = lastAmount;
@@ -137,110 +137,110 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets AgreementId
         /// </summary>
-        [DataMember(Name = "agreementId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "agreementId", IsRequired = false, EmitDefaultValue = true)]
         public string AgreementId { get; set; }
 
         /// <summary>
         /// Gets or Sets ItemId
         /// </summary>
-        [DataMember(Name = "itemId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "itemId", IsRequired = false, EmitDefaultValue = true)]
         public int ItemId { get; set; }
 
         /// <summary>
         /// Gets or Sets Agreement
         /// </summary>
-        [DataMember(Name = "agreement", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "agreement", IsRequired = false, EmitDefaultValue = true)]
         public string Agreement { get; set; }
 
         /// <summary>
         /// This is NOT TransactionStatus, but whatever Steam return.
         /// </summary>
         /// <value>This is NOT TransactionStatus, but whatever Steam return.</value>
-        [DataMember(Name = "status", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status", IsRequired = false, EmitDefaultValue = true)]
         public string Status { get; set; }
 
         /// <summary>
         /// Gets or Sets Period
         /// </summary>
-        [DataMember(Name = "period", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "period", IsRequired = false, EmitDefaultValue = true)]
         public string Period { get; set; }
 
         /// <summary>
         /// Gets or Sets Frequency
         /// </summary>
-        [DataMember(Name = "frequency", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "frequency", IsRequired = false, EmitDefaultValue = true)]
         public int Frequency { get; set; }
 
         /// <summary>
         /// Gets or Sets BillingType
         /// </summary>
-        [DataMember(Name = "billingType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "billingType", IsRequired = false, EmitDefaultValue = true)]
         public string BillingType { get; set; }
 
         /// <summary>
         /// Gets or Sets StartDate
         /// </summary>
-        [DataMember(Name = "startDate", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "startDate", IsRequired = false, EmitDefaultValue = true)]
         public string StartDate { get; set; }
 
         /// <summary>
         /// Gets or Sets EndDate
         /// </summary>
-        [DataMember(Name = "endDate", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "endDate", IsRequired = false, EmitDefaultValue = true)]
         public string EndDate { get; set; }
 
         /// <summary>
         /// Gets or Sets RecurringAmt
         /// </summary>
-        [DataMember(Name = "recurringAmt", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "recurringAmt", IsRequired = false, EmitDefaultValue = true)]
         public decimal RecurringAmt { get; set; }
 
         /// <summary>
         /// Gets or Sets Currency
         /// </summary>
-        [DataMember(Name = "currency", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "currency", IsRequired = false, EmitDefaultValue = true)]
         public string Currency { get; set; }
 
         /// <summary>
         /// Gets or Sets TimeCreated
         /// </summary>
-        [DataMember(Name = "timeCreated", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "timeCreated", IsRequired = false, EmitDefaultValue = true)]
         public string TimeCreated { get; set; }
 
         /// <summary>
         /// Gets or Sets NextPayment
         /// </summary>
-        [DataMember(Name = "nextPayment", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "nextPayment", IsRequired = false, EmitDefaultValue = true)]
         public string NextPayment { get; set; }
 
         /// <summary>
         /// Gets or Sets LastPayment
         /// </summary>
-        [DataMember(Name = "lastPayment", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "lastPayment", IsRequired = false, EmitDefaultValue = true)]
         public string LastPayment { get; set; }
 
         /// <summary>
         /// Gets or Sets LastAmount
         /// </summary>
-        [DataMember(Name = "lastAmount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "lastAmount", IsRequired = false, EmitDefaultValue = true)]
         public decimal LastAmount { get; set; }
 
         /// <summary>
         /// Gets or Sets LastAmountVat
         /// </summary>
-        [DataMember(Name = "lastAmountVat", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "lastAmountVat", IsRequired = false, EmitDefaultValue = true)]
         public decimal LastAmountVat { get; set; }
 
         /// <summary>
         /// Gets or Sets Outstanding
         /// </summary>
-        [DataMember(Name = "outstanding", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "outstanding", IsRequired = false, EmitDefaultValue = true)]
         public int Outstanding { get; set; }
 
         /// <summary>
         /// Gets or Sets FailedAttempts
         /// </summary>
-        [DataMember(Name = "failedAttempts", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "failedAttempts", IsRequired = false, EmitDefaultValue = true)]
         public int FailedAttempts { get; set; }
 
         /// <summary>

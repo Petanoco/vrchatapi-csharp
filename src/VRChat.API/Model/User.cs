@@ -35,25 +35,25 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets AgeVerificationStatus
         /// </summary>
-        [DataMember(Name = "ageVerificationStatus", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "ageVerificationStatus", IsRequired = false, EmitDefaultValue = true)]
         public AgeVerificationStatus AgeVerificationStatus { get; set; }
 
         /// <summary>
         /// Gets or Sets DeveloperType
         /// </summary>
-        [DataMember(Name = "developerType", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "developerType", IsRequired = false, EmitDefaultValue = true)]
         public DeveloperType DeveloperType { get; set; }
 
         /// <summary>
         /// Gets or Sets State
         /// </summary>
-        [DataMember(Name = "state", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "state", IsRequired = false, EmitDefaultValue = true)]
         public UserState State { get; set; }
 
         /// <summary>
         /// Gets or Sets Status
         /// </summary>
-        [DataMember(Name = "status", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "status", IsRequired = false, EmitDefaultValue = true)]
         public UserStatus Status { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="User" /> class.
@@ -108,31 +108,31 @@ namespace VRChat.API.Model
             // to ensure "bio" is required (not null)
             if (bio == null)
             {
-                throw new ArgumentNullException("bio is a required property for User and cannot be null");
+                //throw new ArgumentNullException("bio is a required property for User and cannot be null");
             }
             this.Bio = bio;
             // to ensure "bioLinks" is required (not null)
             if (bioLinks == null)
             {
-                throw new ArgumentNullException("bioLinks is a required property for User and cannot be null");
+                //throw new ArgumentNullException("bioLinks is a required property for User and cannot be null");
             }
             this.BioLinks = bioLinks;
             // to ensure "currentAvatarImageUrl" is required (not null)
             if (currentAvatarImageUrl == null)
             {
-                throw new ArgumentNullException("currentAvatarImageUrl is a required property for User and cannot be null");
+                //throw new ArgumentNullException("currentAvatarImageUrl is a required property for User and cannot be null");
             }
             this.CurrentAvatarImageUrl = currentAvatarImageUrl;
             // to ensure "currentAvatarThumbnailImageUrl" is required (not null)
             if (currentAvatarThumbnailImageUrl == null)
             {
-                throw new ArgumentNullException("currentAvatarThumbnailImageUrl is a required property for User and cannot be null");
+                //throw new ArgumentNullException("currentAvatarThumbnailImageUrl is a required property for User and cannot be null");
             }
             this.CurrentAvatarThumbnailImageUrl = currentAvatarThumbnailImageUrl;
             // to ensure "currentAvatarTags" is required (not null)
             if (currentAvatarTags == null)
             {
-                throw new ArgumentNullException("currentAvatarTags is a required property for User and cannot be null");
+                //throw new ArgumentNullException("currentAvatarTags is a required property for User and cannot be null");
             }
             this.CurrentAvatarTags = currentAvatarTags;
             this.DateJoined = dateJoined;
@@ -140,56 +140,56 @@ namespace VRChat.API.Model
             // to ensure "displayName" is required (not null)
             if (displayName == null)
             {
-                throw new ArgumentNullException("displayName is a required property for User and cannot be null");
+                //throw new ArgumentNullException("displayName is a required property for User and cannot be null");
             }
             this.DisplayName = displayName;
             // to ensure "friendKey" is required (not null)
             if (friendKey == null)
             {
-                throw new ArgumentNullException("friendKey is a required property for User and cannot be null");
+                //throw new ArgumentNullException("friendKey is a required property for User and cannot be null");
             }
             this.FriendKey = friendKey;
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new ArgumentNullException("id is a required property for User and cannot be null");
+                //throw new ArgumentNullException("id is a required property for User and cannot be null");
             }
             this.Id = id;
             this.IsFriend = isFriend;
             // to ensure "lastActivity" is required (not null)
             if (lastActivity == null)
             {
-                throw new ArgumentNullException("lastActivity is a required property for User and cannot be null");
+                //throw new ArgumentNullException("lastActivity is a required property for User and cannot be null");
             }
             this.LastActivity = lastActivity;
             // to ensure "lastLogin" is required (not null)
             if (lastLogin == null)
             {
-                throw new ArgumentNullException("lastLogin is a required property for User and cannot be null");
+                //throw new ArgumentNullException("lastLogin is a required property for User and cannot be null");
             }
             this.LastLogin = lastLogin;
             // to ensure "lastPlatform" is required (not null)
             if (lastPlatform == null)
             {
-                throw new ArgumentNullException("lastPlatform is a required property for User and cannot be null");
+                //throw new ArgumentNullException("lastPlatform is a required property for User and cannot be null");
             }
             this.LastPlatform = lastPlatform;
             // to ensure "profilePicOverride" is required (not null)
             if (profilePicOverride == null)
             {
-                throw new ArgumentNullException("profilePicOverride is a required property for User and cannot be null");
+                //throw new ArgumentNullException("profilePicOverride is a required property for User and cannot be null");
             }
             this.ProfilePicOverride = profilePicOverride;
             // to ensure "profilePicOverrideThumbnail" is required (not null)
             if (profilePicOverrideThumbnail == null)
             {
-                throw new ArgumentNullException("profilePicOverrideThumbnail is a required property for User and cannot be null");
+                //throw new ArgumentNullException("profilePicOverrideThumbnail is a required property for User and cannot be null");
             }
             this.ProfilePicOverrideThumbnail = profilePicOverrideThumbnail;
             // to ensure "pronouns" is required (not null)
             if (pronouns == null)
             {
-                throw new ArgumentNullException("pronouns is a required property for User and cannot be null");
+                //throw new ArgumentNullException("pronouns is a required property for User and cannot be null");
             }
             this.Pronouns = pronouns;
             this.State = state;
@@ -197,19 +197,19 @@ namespace VRChat.API.Model
             // to ensure "statusDescription" is required (not null)
             if (statusDescription == null)
             {
-                throw new ArgumentNullException("statusDescription is a required property for User and cannot be null");
+                //throw new ArgumentNullException("statusDescription is a required property for User and cannot be null");
             }
             this.StatusDescription = statusDescription;
             // to ensure "tags" is required (not null)
             if (tags == null)
             {
-                throw new ArgumentNullException("tags is a required property for User and cannot be null");
+                //throw new ArgumentNullException("tags is a required property for User and cannot be null");
             }
             this.Tags = tags;
             // to ensure "userIcon" is required (not null)
             if (userIcon == null)
             {
-                throw new ArgumentNullException("userIcon is a required property for User and cannot be null");
+                //throw new ArgumentNullException("userIcon is a required property for User and cannot be null");
             }
             this.UserIcon = userIcon;
             this.Badges = badges;
@@ -230,13 +230,13 @@ namespace VRChat.API.Model
         /// &#x60;true&#x60; if, user is age verified (not 18+).
         /// </summary>
         /// <value>&#x60;true&#x60; if, user is age verified (not 18+).</value>
-        [DataMember(Name = "ageVerified", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "ageVerified", IsRequired = false, EmitDefaultValue = true)]
         public bool AgeVerified { get; set; }
 
         /// <summary>
         /// Gets or Sets AllowAvatarCopying
         /// </summary>
-        [DataMember(Name = "allowAvatarCopying", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "allowAvatarCopying", IsRequired = false, EmitDefaultValue = true)]
         public bool AllowAvatarCopying { get; set; }
 
         /// <summary>
@@ -249,39 +249,39 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets Bio
         /// </summary>
-        [DataMember(Name = "bio", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "bio", IsRequired = false, EmitDefaultValue = true)]
         public string Bio { get; set; }
 
         /// <summary>
         /// Gets or Sets BioLinks
         /// </summary>
-        [DataMember(Name = "bioLinks", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "bioLinks", IsRequired = false, EmitDefaultValue = true)]
         public List<string> BioLinks { get; set; }
 
         /// <summary>
         /// When profilePicOverride is not empty, use it instead.
         /// </summary>
         /// <value>When profilePicOverride is not empty, use it instead.</value>
-        [DataMember(Name = "currentAvatarImageUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "currentAvatarImageUrl", IsRequired = false, EmitDefaultValue = true)]
         public string CurrentAvatarImageUrl { get; set; }
 
         /// <summary>
         /// When profilePicOverride is not empty, use it instead.
         /// </summary>
         /// <value>When profilePicOverride is not empty, use it instead.</value>
-        [DataMember(Name = "currentAvatarThumbnailImageUrl", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "currentAvatarThumbnailImageUrl", IsRequired = false, EmitDefaultValue = true)]
         public string CurrentAvatarThumbnailImageUrl { get; set; }
 
         /// <summary>
         /// Gets or Sets CurrentAvatarTags
         /// </summary>
-        [DataMember(Name = "currentAvatarTags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "currentAvatarTags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> CurrentAvatarTags { get; set; }
 
         /// <summary>
         /// Gets or Sets DateJoined
         /// </summary>
-        [DataMember(Name = "date_joined", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "date_joined", IsRequired = false, EmitDefaultValue = true)]
         [JsonConverter(typeof(OpenAPIDateConverter))]
         public DateTime DateJoined { get; set; }
 
@@ -289,13 +289,13 @@ namespace VRChat.API.Model
         /// A users visual display name. This is what shows up in-game, and can different from their &#x60;username&#x60;. Changing display name is restricted to a cooldown period.
         /// </summary>
         /// <value>A users visual display name. This is what shows up in-game, and can different from their &#x60;username&#x60;. Changing display name is restricted to a cooldown period.</value>
-        [DataMember(Name = "displayName", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "displayName", IsRequired = false, EmitDefaultValue = true)]
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Gets or Sets FriendKey
         /// </summary>
-        [DataMember(Name = "friendKey", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "friendKey", IsRequired = false, EmitDefaultValue = true)]
         public string FriendKey { get; set; }
 
         /// <summary>
@@ -308,7 +308,7 @@ namespace VRChat.API.Model
         /// A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.
         /// </summary>
         /// <value>A users unique ID, usually in the form of &#x60;usr_c1644b5b-3ca4-45b4-97c6-a2a0de70d469&#x60;. Legacy players can have old IDs in the form of &#x60;8JoV9XEdpo&#x60;. The ID can never be changed.</value>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "id", IsRequired = false, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
@@ -322,21 +322,21 @@ namespace VRChat.API.Model
         /// Either their &#x60;friendKey&#x60;, or empty string if you are not friends. Unknown usage.
         /// </summary>
         /// <value>Either their &#x60;friendKey&#x60;, or empty string if you are not friends. Unknown usage.</value>
-        [DataMember(Name = "isFriend", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "isFriend", IsRequired = false, EmitDefaultValue = true)]
         public bool IsFriend { get; set; }
 
         /// <summary>
         /// Either a date-time or empty string.
         /// </summary>
         /// <value>Either a date-time or empty string.</value>
-        [DataMember(Name = "last_activity", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "last_activity", IsRequired = false, EmitDefaultValue = true)]
         public string LastActivity { get; set; }
 
         /// <summary>
         /// Either a date-time or empty string.
         /// </summary>
         /// <value>Either a date-time or empty string.</value>
-        [DataMember(Name = "last_login", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "last_login", IsRequired = false, EmitDefaultValue = true)]
         public string LastLogin { get; set; }
 
         /// <summary>
@@ -349,7 +349,7 @@ namespace VRChat.API.Model
         /// This can be &#x60;standalonewindows&#x60; or &#x60;android&#x60;, but can also pretty much be any random Unity verison such as &#x60;2019.2.4-801-Release&#x60; or &#x60;2019.2.2-772-Release&#x60; or even &#x60;unknownplatform&#x60;.
         /// </summary>
         /// <value>This can be &#x60;standalonewindows&#x60; or &#x60;android&#x60;, but can also pretty much be any random Unity verison such as &#x60;2019.2.4-801-Release&#x60; or &#x60;2019.2.2-772-Release&#x60; or even &#x60;unknownplatform&#x60;.</value>
-        [DataMember(Name = "last_platform", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "last_platform", IsRequired = false, EmitDefaultValue = true)]
         public string LastPlatform { get; set; }
 
         /// <summary>
@@ -374,32 +374,32 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets ProfilePicOverride
         /// </summary>
-        [DataMember(Name = "profilePicOverride", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "profilePicOverride", IsRequired = false, EmitDefaultValue = true)]
         public string ProfilePicOverride { get; set; }
 
         /// <summary>
         /// Gets or Sets ProfilePicOverrideThumbnail
         /// </summary>
-        [DataMember(Name = "profilePicOverrideThumbnail", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "profilePicOverrideThumbnail", IsRequired = false, EmitDefaultValue = true)]
         public string ProfilePicOverrideThumbnail { get; set; }
 
         /// <summary>
         /// Gets or Sets Pronouns
         /// </summary>
-        [DataMember(Name = "pronouns", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "pronouns", IsRequired = false, EmitDefaultValue = true)]
         public string Pronouns { get; set; }
 
         /// <summary>
         /// Gets or Sets StatusDescription
         /// </summary>
-        [DataMember(Name = "statusDescription", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "statusDescription", IsRequired = false, EmitDefaultValue = true)]
         public string StatusDescription { get; set; }
 
         /// <summary>
         ///  
         /// </summary>
         /// <value> </value>
-        [DataMember(Name = "tags", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "tags", IsRequired = false, EmitDefaultValue = true)]
         public List<string> Tags { get; set; }
 
         /// <summary>
@@ -423,7 +423,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets UserIcon
         /// </summary>
-        [DataMember(Name = "userIcon", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "userIcon", IsRequired = false, EmitDefaultValue = true)]
         public string UserIcon { get; set; }
 
         /// <summary>

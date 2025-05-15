@@ -48,7 +48,7 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets SignedTos
         /// </summary>
-        [DataMember(Name = "signed_tos", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "signed_tos", IsRequired = false, EmitDefaultValue = true)]
         public bool SignedTos { get; set; }
 
         /// <summary>

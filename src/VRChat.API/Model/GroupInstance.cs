@@ -48,19 +48,19 @@ namespace VRChat.API.Model
             // to ensure "instanceId" is required (not null)
             if (instanceId == null)
             {
-                throw new ArgumentNullException("instanceId is a required property for GroupInstance and cannot be null");
+                //throw new ArgumentNullException("instanceId is a required property for GroupInstance and cannot be null");
             }
             this.InstanceId = instanceId;
             // to ensure "location" is required (not null)
             if (location == null)
             {
-                throw new ArgumentNullException("location is a required property for GroupInstance and cannot be null");
+                //throw new ArgumentNullException("location is a required property for GroupInstance and cannot be null");
             }
             this.Location = location;
             // to ensure "world" is required (not null)
             if (world == null)
             {
-                throw new ArgumentNullException("world is a required property for GroupInstance and cannot be null");
+                //throw new ArgumentNullException("world is a required property for GroupInstance and cannot be null");
             }
             this.World = world;
             this.MemberCount = memberCount;
@@ -69,26 +69,26 @@ namespace VRChat.API.Model
         /// <summary>
         /// Gets or Sets InstanceId
         /// </summary>
-        [DataMember(Name = "instanceId", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "instanceId", IsRequired = false, EmitDefaultValue = true)]
         public string InstanceId { get; set; }
 
         /// <summary>
         /// InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.
         /// </summary>
         /// <value>InstanceID can be \&quot;offline\&quot; on User profiles if you are not friends with that user and \&quot;private\&quot; if you are friends and user is in private instance.</value>
-        [DataMember(Name = "location", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "location", IsRequired = false, EmitDefaultValue = true)]
         public string Location { get; set; }
 
         /// <summary>
         /// Gets or Sets World
         /// </summary>
-        [DataMember(Name = "world", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "world", IsRequired = false, EmitDefaultValue = true)]
         public World World { get; set; }
 
         /// <summary>
         /// Gets or Sets MemberCount
         /// </summary>
-        [DataMember(Name = "memberCount", IsRequired = true, EmitDefaultValue = true)]
+        [DataMember(Name = "memberCount", IsRequired = false, EmitDefaultValue = true)]
         public int MemberCount { get; set; }
 
         /// <summary>
